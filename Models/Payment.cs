@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OPG.Models;
+
 
 namespace OPG.Models
 {
     public class Payment
     {
-        public int Payment_ID { get; set; }
-        public string Payment_Type { get; set; }
-        public string Allowed { get; set; }
+        public int payment_id { get; set; }
+        public string payment_type { get; set; }
+        public string allowed { get; set; }
     }
 }

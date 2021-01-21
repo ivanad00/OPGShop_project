@@ -8,10 +8,10 @@ namespace OPG.Models
 {
     public class Post
     {
-        public int Post_ID { get; set; }
-        public int Product_ID { get; set; }
-        public int User_ID { get; set; }
-        public string Post_Text { get; set; }
-        public int Post_Date_Time { get; set; }
+        public int post_id { get; set; }
+        public Product product_id { get; set; }
+        public Users user_id { get; set; }
+        public string post_text { get; set; }
+        public int post_date_time { get; set; }
     }
 }
