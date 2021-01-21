@@ -12,7 +12,7 @@ namespace OPG.Models
     {
         public int order_id { get; set; }
         public int arrival_time { get; set; }
-       public Users user_id { get; set; }
+        public Users user_id { get; set; }
         public Payment payment_id { get; set; }
     }
 }
