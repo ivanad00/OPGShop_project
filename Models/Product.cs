@@ -12,8 +12,9 @@ namespace OPG.Models
         public int product_id { get; set; }
         public string name { get; set; }
         public Users user_id { get; set; }
-        public Category category_id { get; set; }
+        public int category_id { get; set; }
         public string product_description { get; set; }
         public float discount { get; set; }
+        public Category Category { get; set; }
     }
 }

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<OPG.Models.Product>;
+<html>
+<head>
+    <title>OPG</title>
+</head>
+<body>
+    @foreach ( var product in Model )
+    {
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <p>@product.name</p>
+                    <p>@product.product_id.ToString( "c" )</p>
+                    <p>@product.product_description</p>
+                </div>
+            </div>
+        </div>
+    }
+</body>
+</html>
