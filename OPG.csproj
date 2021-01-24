@@ -9,8 +9,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\home.cshtml" />
+    <Content Remove="Views\login.cshtml" />
+    <Content Remove="Views\products.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\lib\" />
     <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Home\index.cshtml" />
+    <None Include="Views\SingIn\login.cshtml" />
+    <None Include="Views\Product\list.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

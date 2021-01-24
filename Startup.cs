@@ -29,6 +29,7 @@ namespace OPG
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
            
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IProductRepository, MockProductRepository> ();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddControllersWithViews();
             services.AddMvc();
@@ -48,15 +49,23 @@ namespace OPG
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute("Fallback",
+                endpoints.MapControllerRoute("Default",
                     "{controller}/{action}/{id?}",
-                    new {controller="home", action="Index"}
+                    new {controller="home", action="index"}
+                    );
+                endpoints.MapControllerRoute ( "Products",
+                    "{controller}/{action}/{id?}",
+                    new { controller = "Product", action = "List" }
+                    );
+                endpoints.MapControllerRoute ( "Login/Register",
+                    "{controller}/{action}/{id?}",
+                    new { controller = "SignIN", action = "login" }
                     );
                 /*endpoints.MapGet("/", async context =>
                 {
                     await context.Response.WriteAsync("Hello World!");
                 });*/
-            });
+            } );
         }
     }
 }
