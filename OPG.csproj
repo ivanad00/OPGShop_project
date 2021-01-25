@@ -21,7 +21,7 @@
 
   <ItemGroup>
     <None Include="Views\Home\index.cshtml" />
-    <None Include="Views\SingIn\login.cshtml" />
+    <None Include="Views\Form\login.cshtml" />
     <None Include="Views\Product\list.cshtml" />
   </ItemGroup>
 

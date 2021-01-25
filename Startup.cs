@@ -57,9 +57,9 @@ namespace OPG
                     "{controller}/{action}/{id?}",
                     new { controller = "Product", action = "List" }
                     );
-                endpoints.MapControllerRoute ( "Login/Register",
+                endpoints.MapControllerRoute ( "Register",
                     "{controller}/{action}/{id?}",
-                    new { controller = "SignIN", action = "login" }
+                    new { controller = "Form", action = "login" }
                     );
                 /*endpoints.MapGet("/", async context =>
                 {

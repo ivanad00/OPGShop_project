@@ -10,16 +10,16 @@ namespace OPG.Controllers
 {
     public class ProductController : Controller
     {
-        private readonly IProductRepository _productRepository;
+        /*private readonly IProductRepository _productRepository;
 
         public ProductController(IProductRepository productRepository)
         {
             _productRepository = productRepository;
         }
-
+        */
         public ViewResult List()
         {
-            return View(_productRepository.AllProducts);
+            return View(/*productRepository.AllProducts*/);
         }
     }
 }
