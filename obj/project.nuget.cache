@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z73RBs5+L9xSQaayddg9HUNezJ/nq7+kkCORoeo9h2QGILstrk0ClfKBfcfPgV3kBqsXAnAP0RcMTCfcD0NSdg==",
+  "dgSpecHash": "hzHifMcRljwR2MiBcp2a039IvW+XUayhO6+YSQiC5Mwi7J84WUsRu4OhBmJQx/SGyX6r8CWsXfYJZMFwxLaFLQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivana\\OneDrive\\Documents\\GitHub\\OPG_dotnet\\opg\\OPG.csproj",
+  "projectFilePath": "C:\\Users\\ivana\\OneDrive\\Documents\\GitHub\\OPG_dotnet\\OPG.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivana\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\ivana\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

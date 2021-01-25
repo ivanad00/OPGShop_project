@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>OPG Shop login</title>
+    <link rel="stylesheet" href="~/css/style_login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <div style="background-image: url(images/login.jpg);">
+</head>
+
+<body>
+
+    <div class="hero">
+
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+
+            <form id="login" class="input-group">
+                <div class="textbox">
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="input-field" placeholder="User" required>
+                </div>
+
+                <div class="textbox">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+
+
+            <form id="register" class="input-group">
+                <div class="textbox">
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="input-field" placeholder="User" required>
+                </div>
+                <div class="textbox">
+                    <i class="far fa-envelope"></i>
+                    <input type="email" class="input-field" placeholder="E-mail" required>
+                </div>
+                <div class="textbox">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                </div>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    <!--
+        <div class="login-box">
+            <h3> Login </h3>
+            <div class="textbox">
+                <i class="fas fa-user"></i>
+                <input type = "text" placeholder="Username" value="">
+            </div>
+
+            <div class="textbox">
+                <i class="fas fa-lock"></i>
+                <input type = "password" placeholder="Password" value="">
+            </div>
+
+            <input class="btn"  type="button" name="" value="Sign in">
+            <p class= "message">Don't have an account yet?
+                <input class="btn" type="button" name="" value="Register">
+            </p>
+        </div>
+    */
+     -->
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
