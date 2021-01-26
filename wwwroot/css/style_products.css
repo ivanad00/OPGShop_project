@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .vegetables{
     background-color: rgb(255, 255, 255);
 }
@@ -12,6 +17,25 @@ background-color: #e4e0e0;
 }
 .other-products{
     background-color: #e4e0e0; 
+}
+
+
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }
 
 .prod{
@@ -50,8 +74,6 @@ h3{
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
-    row-gap:20mm ;
-
     white-space: normal;
     transition: 2s;
     transition-timing-function: ease-out;
@@ -183,5 +205,7 @@ padding: 0 10px;
 }
 
 
-  
-  
+.navbar-collapse {
+    align-items: center;
+    width: 100%;
+}
