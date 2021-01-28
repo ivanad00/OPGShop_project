@@ -1,4 +1,4 @@
-
+/* register / login button */
 var x = document.getElementById("login");
 var y = document.getElementById("register");
 var z = document.getElementById("btn");
@@ -15,3 +15,12 @@ var z = document.getElementById("btn");
         z.style.left="0px";
     }
 
+/* nav */
+
+function redirectingProducts() {
+    window.location ="http://localhost:5000/product/list"
+}
+
+function redirectingForms() {
+    window.location = "http://localhost:5000/form/login"
+}
