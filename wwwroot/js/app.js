@@ -17,6 +17,10 @@ var z = document.getElementById("btn");
 
 /* nav */
 
+function redirectingHomePage() {
+    window.location = "http://localhost:5000"
+}
+
 function redirectingProducts() {
     window.location ="http://localhost:5000/product/list"
 }
