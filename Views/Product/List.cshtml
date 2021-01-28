@@ -7,41 +7,44 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 
+
 <body>
-    
-            <!--NAVIGATION BAR-->
 
-            <section id="nav-bar">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#"><img src="~/images/logo4.png"/></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+    <!--NAVIGATION BAR-->
 
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">HOME</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#vegetables">VEGETABLES</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#fruit">FRUIT</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#other-products">OTHER PRODUCTS</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </section>
-  
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="~/images/logo4.png" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="http://localhost:5000" onclick="redirectingHomePage()">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vegetables">VEGETABLES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fruit">FRUIT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#other-products">OTHER PRODUCTS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
     <div id="vegetables">
         <h2>Vegetables</h2>
         <div class="grid-container">
@@ -49,7 +52,6 @@
                 <div class="herbs"><a title="herbs"></a></div>
                 <img src="~/images/herbs.jpg" alt="herbs">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Herbs</h3>
                 </div>
                 <button class="button">Order</button>
@@ -58,7 +60,6 @@
                 <div class="carrot"><a title="carrot"></a></div>
                 <img src="~/images/carrot.jpg" alt="carrot">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Carrot</h3>
                 </div>
                 <button class="button">Order</button>
@@ -67,16 +68,14 @@
                 <div class="tomato"><a title="tomato"></a></div>
                 <img src="~/images/tomato.jpg" alt="tomato">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Tomato</h3>
                 </div>
                 <button class="button">Order</button>
             </div>
             <div class="prod">
                 <div class="cherrytomato"><a title="Cherry tomato"></a></div>
-                <img src="~/images/cherryy.jpg" alt="cherrytomato">
+                <img src="~/images/cherry.jpg" alt="cherrytomato">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Cherry tomato</h3>
                 </div>
                 <button class="button">Order</button>
@@ -85,7 +84,6 @@
                 <div class="potato"><a title="potato"></a></div>
                 <img src="~/images/potato.jpg" alt="potato">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Potato</h3>
                 </div>
                 <button class="button">Order</button>
@@ -94,7 +92,6 @@
                 <div class="salad"><a title="salad"></a></div>
                 <img src="~/images/salad.jpg" alt="salad">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Salad</h3>
                 </div>
                 <button class="button">Order</button>
@@ -103,7 +100,6 @@
                 <div class="onion"><a title="Onion"></a></div>
                 <img src="~/images/onion.jpg" alt="onion">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Onion</h3>
                 </div>
                 <button class="button">Order</button>
@@ -112,7 +108,6 @@
                 <div class="broccoli"><a title="broccoli"></a></div>
                 <img src="~/images/broccoli.jpg" alt="broccoli">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Broccoli</h3>
                 </div>
                 <button class="button">Order</button>
@@ -121,7 +116,6 @@
                 <div class="cauliflower"><a title="cauliflower"></a></div>
                 <img src="~/images/cauliflower.jpg" alt="cauliflower">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Cauliflower</h3>
                 </div>
                 <button class="button">Order</button>
@@ -130,7 +124,6 @@
                 <div class="cucumbers"><a title="cucumbers"></a></div>
                 <img src="~/images/cucumbers.jpg" alt="cucumbers">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Cucumber</h3>
                 </div>
                 <button class="button">Order</button>
@@ -139,7 +132,6 @@
                 <div class="eggplant"><a title="eggplant"></a></div>
                 <img src="~/images/eggplant.jpg" alt="eggplant">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Eggplant</h3>
                 </div>
                 <button class="button">Order</button>
@@ -148,7 +140,6 @@
                 <div class="zuchinni"><a title="zucchini"></a></div>
                 <img src="~/images/zuccini.jpg" alt="zucchini">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Zucchini</h3>
                 </div>
                 <button class="button">Order</button>
@@ -157,7 +148,6 @@
                 <div class="spinch"><a title="spinach"></a></div>
                 <img src="~/images/spinach.jpg" alt="spinach">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Spinach</h3>
                 </div>
                 <button class="button">Order</button>
@@ -166,7 +156,6 @@
                 <div class="radish"><a title="radish"></a></div>
                 <img src="~/images/radish.jpg" alt="radish">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Radish</h3>
                 </div>
                 <button class="button">Order</button>
@@ -175,7 +164,6 @@
                 <div class="leek"><a title="leek"></a></div>
                 <img src="~/images/leek.jpg" alt="leek">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Leek</h3>
                 </div>
                 <button class="button">Order</button>
@@ -184,7 +172,6 @@
                 <div class="kale"><a title="kale"></a></div>
                 <img src="~/images/kale.jpg" alt="kale">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Kale</h3>
                 </div>
                 <button class="button">Order</button>
@@ -193,7 +180,6 @@
                 <div class="celery"><a title="celery"></a></div>
                 <img src="~/images/celery.jpg" alt="celery">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Celery</h3>
                 </div>
                 <button class="button">Order</button>
@@ -202,7 +188,6 @@
                 <div class="beans"><a title="beans"></a></div>
                 <img src="~/images/beans.jpg" alt="beans">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Beans</h3>
                 </div>
                 <button class="button">Order</button>
@@ -217,7 +202,6 @@
                 <div class="apple"><a title="apple"></a></div>
                 <img src="~/images/apple.jpg" alt="apple">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Apple</h3>
                 </div>
                 <button class="button">Order</button>
@@ -226,7 +210,6 @@
                 <div class="pear"><a title="pear"></a></div>
                 <img src="~/images/pear.jpg" alt="pear">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Pear</h3>
                 </div>
                 <button class="button">Order</button>
@@ -235,25 +218,22 @@
                 <div class="orange"><a title="orange"></a></div>
                 <img src="~/images/orange.jpg" alt="orange">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Orange</h3>
                 </div>
                 <button class="button">Order</button>
             </div>
             <div class="prod">
-                <div class="cherry"><a title="l"></a></div>
+                <div class="lemon"><a title="l"></a></div>
                 <img src="~/images/lemon.jpg" alt="lemon">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Lemon</h3>
                 </div>
                 <button class="button">Order</button>
             </div>
             <div class="prod">
                 <div class="cherry"><a title="cherry"></a></div>
-                <img src="~/images/cherry.jpg" alt="cherry">
+                <img src="~/images/cherryy.jpg" alt="cherry">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Cherry</h3>
                 </div>
                 <button class="button">Order</button>
@@ -262,16 +242,14 @@
                 <div class="strawberry"><a title="strawberry"></a></div>
                 <img src="~/images/strawberry.jpg" alt="strawberry">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Strawberry</h3>
                 </div>
                 <button class="button">Order</button>
             </div>
             <div class="prod">
-                <div class="blacberry"><a title="blackberry"></a></div>
+                <div class="blackberry"><a title="blackberry"></a></div>
                 <img src="~/images/blackberry.jpg" alt="blackberry">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Blackberry</h3>
                 </div>
                 <button class="button">Order</button>
@@ -281,7 +259,6 @@
                 <div class="raspberry"><a title="raspberry"></a></div>
                 <img src="~/images/raspberry.jpg" alt="raspberry">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Raspberry</h3>
                 </div>
                 <button class="button">Order</button>
@@ -290,17 +267,7 @@
                 <div class="blueberry"><a title="blueberry"></a></div>
                 <img src="~/images/blueberry.jpg" alt="blueberry">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Blueberry</h3>
-                </div>
-                <button class="button">Order</button>
-            </div>
-            <div class="prod">
-                <div class="bannana"><a title="bannana"></a></div>
-                <img src="~/images/bannana.jpg" alt="bannana">
-                <div class="description">
-                    <h4>Product description</h4>
-                    <h3>Bannana</h3>
                 </div>
                 <button class="button">Order</button>
             </div>
@@ -308,16 +275,14 @@
                 <div class="grape"><a title="grape"></a></div>
                 <img src="~/images/grape.jpg" alt="grape">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Grape</h3>
                 </div>
                 <button class="button">Order</button>
             </div>
             <div class="prod">
                 <div class="grapefruit"><a title="grapefruit"></a></div>
-                <img src= "~/images/grapefruit.jpg" alt="grapefruit">
+                <img src="~/images/grapefruit.jpg" alt="grapefruit">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Grapefruit</h3>
                 </div>
                 <button class="button">Order</button>
@@ -326,7 +291,6 @@
                 <div class="plum"><a title="plum"></a></div>
                 <img src="~/images/plum.jpg" alt="plum">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Plum</h3>
                 </div>
                 <button class="button">Order</button>
@@ -335,7 +299,6 @@
                 <div class="pomegranate"><a title="pomegranate"></a></div>
                 <img src="~/images/pomegranate.jpg" alt="pomegranate">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Pomegranate</h3>
                 </div>
                 <button class="button">Order</button>
@@ -344,7 +307,6 @@
                 <div class="watermelon"><a title="watermelon"></a></div>
                 <img src="~/images/watermelon.jpg" alt="watermelon">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Watermelon</h3>
                 </div>
                 <button class="button">Order</button>
@@ -359,7 +321,6 @@
                 <div class="meat"><a title="meat"></a></div>
                 <img src="~/images/meat.jpg" alt="meat">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Meat</h3>
                 </div>
                 <button class="button">Order</button>
@@ -368,7 +329,6 @@
                 <div class="delicatessen"><a title="delicatessen"></a></div>
                 <img src="~/images/del.jpg" alt="delicatessen">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Delicatessen</h3>
                 </div>
                 <button class="button">Order</button>
@@ -377,16 +337,14 @@
                 <div class="dairy-products"><a title="dairy-products"></a></div>
                 <img src="~/images/dairy.jpg" alt="dairy-products">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Dairy products</h3>
                 </div>
                 <button class="button">Order</button>
             </div>
             <div class="prod">
                 <div class="fish"><a title="fish"></a></div>
-                <img src="~/images/fish.jpg" alt="fish">
+                <img src="~/images/fishh.jpg" alt="fish">
                 <div class="description">
-                    <h4>Product description</h4>
                     <h3>Fish</h3>
                 </div>
                 <button class="button">Order</button>
@@ -394,5 +352,18 @@
         </div>
     </div>
 
+
+    <footer>
+        <div class="container text-center">
+            <p id="copyright">
+                OPG Shop,
+                <em>All Rights Reserved. &copy; 2020.</em>
+            </p>
+        </div>
+    </footer>
+
+    <script src="~/js/app.js"></script>
+
 </body>
 </html>
+
