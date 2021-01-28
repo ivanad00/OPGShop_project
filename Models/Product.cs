@@ -9,12 +9,11 @@ namespace OPG.Models
 {
     public class Product
     {
-        public int product_id { get; set; }
-        public string name { get; set; }
-        public int user_id { get; set; }
-        public int category_id { get; set; }
-        public string product_description { get; set; }
-        public float discount { get; set; }
+        public int ProductId { get; set; }
+        public string Name { get; set; }
+        public User User { get; set; }
+        public string ProductDescription { get; set; }
+        public float Discount { get; set; }
         public Category Category { get; set; }
     }
 }

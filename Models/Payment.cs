@@ -10,8 +10,9 @@ namespace OPG.Models
 {
     public class Payment
     {
-        public int payment_id { get; set; }
-        public string payment_type { get; set; }
-        public string allowed { get; set; }
+        public int PaymentId { get; set; }
+        public string PaymentType { get; set; }
+        public string Allowed { get; set; }
+        public Order Order { get; set; }
     }
 }

@@ -10,9 +10,11 @@ namespace OPG.Models
 {
     public class Order
     {
-        public int order_id { get; set; }
-        public int arrival_time { get; set; }
-        public Users user_id { get; set; }
-        public Payment payment_id { get; set; }
+        public int OrderId { get; set; }
+        public DateTime ArrivalTime { get; set; }
+        public User User { get; set; }
+        public int Price { get; set; }
+        public List<Payment> Payment { get; set; }
+        public List <OrderProduct> OrderProduct { get; set; }
     }
 }

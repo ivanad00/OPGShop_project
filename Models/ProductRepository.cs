@@ -22,9 +22,9 @@ namespace OPG.Models
             }
         }
 
-        public Product GetProductByID ( int Product_id )
+        public Product GetProductByID ( int Product_Id )
         {
-            return _appDbContext.Products.FirstOrDefault ( p => p.product_id == Product_id);
+            return _appDbContext.Products.FirstOrDefault ( p => p.ProductId == Product_Id);
         }
     }
 }

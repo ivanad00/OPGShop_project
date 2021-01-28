@@ -52,7 +52,7 @@ namespace OPG
                 endpoints.MapControllerRoute("Default",
                     "{controller}/{action}/{id?}",
                     new {controller="home", action="index"}
-                    );
+                    ); 
                 endpoints.MapControllerRoute ( "Products",
                     "{controller}/{action}/{id?}",
                     new { controller = "Product", action = "List" }

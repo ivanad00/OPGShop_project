@@ -16,11 +16,12 @@ namespace OPG.Models
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet<Order_Product> Order_Product { get; set; }
+        //public DbSet<OrderProduct> OrderProduct { get; set; }
         public DbSet<Payment> Payments { get; set; }
         public DbSet<Rating> Ratings { get; set; }
         public DbSet<Seller> Seller { get; set; }
-        public DbSet<Users> User { get; set; }
+
+        public DbSet<User> User { get; set; }
     }
 
     

@@ -10,9 +10,9 @@ namespace OPG.Models
 {
     public class Seller
     {
-        public int seller_id { get; set; }
-        public Users user_id { get; set; }
-        public string company_name { get; set; }
-        public int oib { get; set; }
+        public int SellerId { get; set; }
+        public User User { get; set; }
+        public string CompanyName { get; set; }
+        public int Oib { get; set; }
     }
 }
