@@ -19,8 +19,22 @@ using OPG.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\ivana\OneDrive\Documents\GitHub\OPG_dotnet\Views\_ViewImports.cshtml"
+using OPG.Controllers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\ivana\OneDrive\Documents\GitHub\OPG_dotnet\Views\_ViewImports.cshtml"
+using OPG.Migrations;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1c4546dff47fc49c57ff4327b09733d67d398e74", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"71fb605126a948e43c5fc77851ab606e52dafb18", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"88f0258fa5cfa94910ff2baa85750ae2efbf6bfa", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

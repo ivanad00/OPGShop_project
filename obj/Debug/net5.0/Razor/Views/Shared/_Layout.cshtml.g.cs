@@ -19,8 +19,22 @@ using OPG.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\ivana\OneDrive\Documents\GitHub\OPG_dotnet\Views\_ViewImports.cshtml"
+using OPG.Controllers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\ivana\OneDrive\Documents\GitHub\OPG_dotnet\Views\_ViewImports.cshtml"
+using OPG.Migrations;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"416b55ff6332cf7255e6061c05b15c6f1c5f1dfd", @"/Views/Shared/_Layout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"71fb605126a948e43c5fc77851ab606e52dafb18", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"88f0258fa5cfa94910ff2baa85750ae2efbf6bfa", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -49,7 +63,7 @@ using OPG.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "416b55ff6332cf7255e6061c05b15c6f1c5f1dfd3068", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "416b55ff6332cf7255e6061c05b15c6f1c5f1dfd3431", async() => {
                 WriteLiteral(@"
     <!--<link rel=""stylesheet"" href=""~/css/style.css"" />
     <link rel=""stylesheet"" href=""~/lib/bootstrap/css/bootstrap-grid.css"" />
@@ -71,7 +85,7 @@ using OPG.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "416b55ff6332cf7255e6061c05b15c6f1c5f1dfd4438", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "416b55ff6332cf7255e6061c05b15c6f1c5f1dfd4801", async() => {
                 WriteLiteral("\r\n    <div>\r\n        ");
 #nullable restore
 #line 15 "C:\Users\ivana\OneDrive\Documents\GitHub\OPG_dotnet\Views\Shared\_Layout.cshtml"

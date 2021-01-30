@@ -1,12 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using OPG.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -33,6 +28,8 @@ namespace OPG
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddControllersWithViews();
             services.AddMvc();
+            services.AddHttpContextAccessor ();
+            services.AddSession ();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,28 +40,30 @@ namespace OPG
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseNodeModules ();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseRouting();
+            app.UseSession ();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute("Default",
-                    "{controller}/{action}/{id?}",
+                endpoints.MapControllerRoute(
+                    name: "Default",
+                    pattern: "{controller}/{action}/{id?}",
                     new {controller="home", action="index"}
                     ); 
-                endpoints.MapControllerRoute ( "Products",
-                    "{controller}/{action}/{id?}",
+                endpoints.MapControllerRoute ( 
+                    name: "Products",
+                    pattern: "{controller}/{action}/{id?}",
                     new { controller = "Product", action = "List" }
                     );
-                endpoints.MapControllerRoute ( "Register",
-                    "{controller}/{action}/{id?}",
+                endpoints .MapControllerRoute ( 
+                    name:"Register",
+                    pattern: "{controller}/{action}/{id?}",
                     new { controller = "Form", action = "login" }
                     );
-                /*endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });*/
+                
             } );
         }
     }

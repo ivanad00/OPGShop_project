@@ -32,5 +32,12 @@ namespace OPG.Controllers
                 .ToList();
             return View (results.ToList());
         }
+        /*public IActionResult Details(int id )
+        {
+            var product = _productRepository.GetProductByID ( id );
+            if ( product == null )
+                return NotFound ();
+            return View ( product );
+        }*/
     }
 }
