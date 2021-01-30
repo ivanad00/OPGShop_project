@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace OPG.Models
 {
-    public class AppDbContext : IdentityDbContext<IdentityUser>
+    public class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base (options)
+        public AppDbContext ( DbContextOptions<AppDbContext> options ) : base ( options )
         {
 
         }
@@ -38,7 +38,7 @@ namespace OPG.Models
                 ProductId = 1,
                 Name = "Apple ",
                 CategoryId = 1,
-                UserId= 2,
+                UserId = 2,
                 ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/applepie.jpg",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -46,7 +46,7 @@ namespace OPG.Models
                 ProductId = 2,
                 Name = "Carrot",
                 CategoryId = 2,
-                UserId=1,
+                UserId = 1,
                 ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/applepie.jpg",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -62,7 +62,7 @@ namespace OPG.Models
                 ProductId = 4,
                 Name = "Tuna",
                 CategoryId = 4,
-                UserId=4,
+                UserId = 4,
                 ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/applepie.jpg",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -70,7 +70,7 @@ namespace OPG.Models
                 ProductId = 5,
                 Name = "Potato",
                 CategoryId = 2,
-                UserId=5,
+                UserId = 5,
                 ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/applepie.jpg",
             } );
 
@@ -79,13 +79,13 @@ namespace OPG.Models
             {
                 UserId = 1,
                 FirstName = "Ivan",
-                LastName="Ivanović",
-                Role="Seller",
-                SellerId=1,
-                Adress1="Ruđera Boškovića 28",
-                City="Split",
-                ZipCode=21000,
-                Country="Hrvatska"
+                LastName = "Ivanović",
+                Role = "Seller",
+                SellerId = 1,
+                Adress1 = "Ruđera Boškovića 28",
+                City = "Split",
+                ZipCode = 21000,
+                Country = "Hrvatska"
             } );
             modelBuilder.Entity<User> ().HasData ( new User
             {
@@ -202,7 +202,7 @@ namespace OPG.Models
             modelBuilder.Entity<Rating> ().HasData ( new Rating
             {
                 RatingId = 1,
-                Note="this is good"
+                Note = "this is good"
             } );
             modelBuilder.Entity<Rating> ().HasData ( new Rating
             {
@@ -219,8 +219,8 @@ namespace OPG.Models
             modelBuilder.Entity<Seller> ().HasData ( new Seller
             {
                 SellerId = 1,
-                Oib=123456789,
-                CompanyName="OPG1"
+                Oib = 123456789,
+                CompanyName = "OPG1"
             } );
             modelBuilder.Entity<Seller> ().HasData ( new Seller
             {
@@ -240,3 +240,4 @@ namespace OPG.Models
     }
 
 }
+

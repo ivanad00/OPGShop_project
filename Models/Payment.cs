@@ -12,6 +12,6 @@ namespace OPG.Models
     {
         public int PaymentId { get; set; }
         public string PaymentType { get; set; }
-        public Order Order { get; set; }
+        public string Allowed { get; set; }
     }
 }

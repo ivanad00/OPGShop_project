@@ -15,7 +15,7 @@ namespace OPG.Models
         public User User { get; set; }
         public decimal Price { get; set; }
         public ICollection<Payment> Payment { get; set; }
-        public ICollection <OrderProduct> OrderProduct { get; set; }
-        
+        public ICollection<OrderProduct> OrderProduct { get; set; }
+
     }
 }

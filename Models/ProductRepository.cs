@@ -19,9 +19,9 @@ namespace OPG.Models
             }
         }
 
-        public Product GetProductByID ( int Product_Id )
+        public Product GetProductByID ( int product_id )
         {
-            return _appDbContext.Product.FirstOrDefault ( p => p.ProductId == Product_Id);
+            return _appDbContext.Product.FirstOrDefault ( p => p.ProductId == product_id);
         }
     }
 }
