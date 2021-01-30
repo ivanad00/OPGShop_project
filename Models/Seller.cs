@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OPG.Models;
+
 
 namespace OPG.Models
 {
     public class Seller
     {
-        public int Rating_ID { get; set; }
-        public int User_ID { get; set; }
-        public int Product_ID { get; set; }
-        public string Note { get; set; }
+        public int SellerId { get; set; }
+        public User User { get; set; }
+        public string CompanyName { get; set; }
+        public int Oib { get; set; }
     }
 }

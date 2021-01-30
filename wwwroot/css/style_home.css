@@ -1,0 +1,146 @@
+*
+{
+margin : 0;
+padding : 0;
+}
+
+
+#nav-bar
+{
+    position: sticky;
+    top : 0;
+    z-index: 10;
+
+}
+
+.navbar-brand img
+{
+    height: 60px;
+    padding-left: 30px;
+
+}
+
+.navbar-nav li
+{
+padding: 0 10px;
+
+}
+
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+}
+
+#nav-bar ul li a:hover
+{
+    color: beige!important;
+}
+
+.navbar
+{
+    background: #fff;
+}
+
+.navbar-toggler
+{
+    border: none!important;
+}
+
+.nav-link
+{
+    color: #555!important;
+    font-weight: 600px;
+    font-size:16px;
+}
+
+ #slider
+{
+    width: 100%;
+    padding-bottom: 70px;
+} 
+
+.carousel-caption
+{
+    top : 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+    
+}
+
+.carousel-caption h5
+{
+    color:whitesmoke;
+    font-size: 42px;
+
+
+}
+
+#services h3::after{
+    content: ' ';
+    background:  rgb(222, 233, 247);
+    display:block;
+    height: 3px;
+    width:170px;
+    margin: 20px auto 5 px;
+
+}
+
+.services
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: transparent ;
+}
+
+.icon 
+{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width:80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+#services p{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.services .col-md-3:hover
+{
+    background: gray;
+    cursor: pointer;
+    transition: 1s;    
+}
+
+#services h4
+{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    padding-bottom: 40px;
+    padding-bottom: 40px;
+}
+
+
+/* FOOTER*/ 
+
+footer 
+{
+    background-color: rgb(222, 233, 247);
+}
+
+
+#copyright{
+	margin-top:0px;
+	position: relative;
+	display: block;
+	border-top: 1px solid darkgray;
+	padding: 5px 0;
+	z-index: 1;
+}

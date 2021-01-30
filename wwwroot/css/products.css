@@ -1,0 +1,229 @@
+.vegetables{
+    background-color: rgb(255, 255, 255);
+}
+.section-box{
+    background-color: #e4e0e0;
+}
+.vegetables {
+background-color: #e4e0e0;   
+}
+.fruit{
+    background-color: #e4e0e0; 
+}
+
+.navbar-nav li
+{
+padding: 0 20px;
+
+}
+#nav-bar
+{
+    position: sticky;
+    top : 0;
+    z-index: 10;
+
+}
+.nav-item{
+
+    color:#000000 ;
+
+}
+.navbar
+{
+    background: #fff;
+}
+
+.nav-links
+{
+    text-align: left;
+    color: #555;
+    font-weight: 600px;
+    font-size:20px;
+    font-family: cursive;
+     color: black;
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     display: inline;
+     
+}
+
+
+
+.prod{
+    display: inline-block;
+    width: 300px;
+    min-width: 300px;
+    margin: 0 4px;
+    padding: 20px 16px;
+    border-radius: 4px ;
+    white-space: normal;
+    transition: all 0.3s ease;
+}
+.prod:hover{
+    background-color: rgb(255, 255, 255);
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.2);
+    border-color: #126cd3;
+    
+}
+.description{
+    text-align: center;
+    font-family:monospace;
+    max-width: 80mm;
+    text-shadow: 1px 0.2px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+h3{
+    font-size: 25px;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    row-gap:20mm ;
+
+    white-space: normal;
+    transition: 2s;
+    transition-timing-function: ease-out;
+
+  }
+
+img{
+    width: 80mm;
+    height:50mm;
+    border-radius: 10px;
+}
+.title{
+  padding: 60px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+header h1{
+    margin: 0;
+    padding: 0 12px;
+    font-size: 70px;
+    text-align: center;
+    color:#000000 ;
+    text-shadow:5px 5px 10px rgb(222, 222, 223);
+    font-family:'Brush Script MT', cursive; 
+}
+h2{
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    font-size: 35px;
+}
+.button{
+
+    box-shadow: #70aaec;
+    font-family:cursive ;
+    align-content: space-between;
+    background-color: rgb(210, 215, 219);
+    display: block;
+    margin: 12px auto;
+    padding: 8px 0px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-color:#126cd3 ;
+    color: rgb(3, 19, 34);
+    outline: none;
+    border-radius: 22px;
+    width: 150px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/*.navbar-brand img
+{
+    height: 60px;
+    padding-left: 30px;
+
+}*/
+
+
+.navbar-nav li
+{
+display: inline;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(201, 199, 199);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+/*.navbar-nav li a
+{
+    float: left;
+    text-align: left;
+    font-family: cursive;
+    color:#000000 ;
+}
+
+#nav-bar ul li a:hover
+{
+    color:black;
+}*/
+
+
+.buttonn {
+    float: right;
+  }
+  
+  .buttonn input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    text-align: center;
+  }
+  
+  .buttonn {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buttonn:hover {
+    background: #ccc;
+  }
+
+  
+  
