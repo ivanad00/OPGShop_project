@@ -13,8 +13,8 @@ namespace OPG.Models
         public int OrderId { get; set; }
         public DateTime ArrivalTime { get; set; }
         public User User { get; set; }
-        public int Price { get; set; }
-        public List<Payment> Payment { get; set; }
-        public List <OrderProduct> OrderProduct { get; set; }
+        public decimal Price { get; set; }
+        public ICollection<Payment> Payment { get; set; }
+        public ICollection <OrderProduct> OrderProduct { get; set; }
     }
 }

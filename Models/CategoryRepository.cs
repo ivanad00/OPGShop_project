@@ -13,7 +13,7 @@ namespace OPG.Models
         {
             _appDbcontext = appDbContext;
         }
-        public IEnumerable<Category> AllCategories => _appDbcontext.Categories;
+        public IEnumerable<Category> AllCategories => _appDbcontext.Category;
     }
 }
 

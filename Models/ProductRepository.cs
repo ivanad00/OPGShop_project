@@ -18,13 +18,13 @@ namespace OPG.Models
         {
             get
             {
-                return _appDbContext.Products.Include(c => c.Category );
+                return _appDbContext.Product.Include(c => c.Category );
             }
         }
 
         public Product GetProductByID ( int Product_Id )
         {
-            return _appDbContext.Products.FirstOrDefault ( p => p.ProductId == Product_Id);
+            return _appDbContext.Product.FirstOrDefault ( p => p.ProductId == Product_Id);
         }
     }
 }

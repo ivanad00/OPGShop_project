@@ -160,3 +160,4 @@ C:\Users\ivana\OneDrive\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\OPG.Views.p
 C:\Users\ivana\OneDrive\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\OPG.csproj.CopyComplete
 C:\Users\ivana\OneDrive\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\OPG.genruntimeconfig.cache
 C:\Users\ivana\OneDrive\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\OPG.csprojAssemblyReference.cache
+C:\Users\ivana\OneDrive\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\Razor\Views\Product\Shop.cshtml.g.cs

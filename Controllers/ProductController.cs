@@ -25,5 +25,12 @@ namespace OPG.Controllers
             //var results = _appDbContext.Products.ToList();
             return View(/*productRepository.AllProducts*/);
         }
+        public IActionResult Shop ()
+        {
+            var results = _appDbContext.Product
+                .OrderBy(p=>p.Category )
+                .ToList();
+            return View (results.ToList());
+        }
     }
 }
