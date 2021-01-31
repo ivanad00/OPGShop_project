@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OPG.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OPG.Controllers
 {
@@ -19,18 +15,20 @@ namespace OPG.Controllers
             _productRepository = productRepository;
             _appDbContext = appDbContext;
         }
-        
-        public ViewResult List()
+
+        public ViewResult List ()
         {
-            //var results = _appDbContext.Products.ToList();
-            return View(/*productRepository.AllProducts*/);
+            //var results = _appDbContext.Product.ToList();
+            return View (/*_productRepository.AllProducts*/);
         }
         public IActionResult Shop ()
         {
-            var results = _appDbContext.Product
+            /*var results = _appDbContext.Product
                 .OrderBy(p=>p.Category )
                 .ToList();
-            return View (results.ToList());
+            return View (results.ToList());*/
+            var results = _appDbContext.Product.ToList ();
+            return View ( _productRepository.AllProducts );
         }
         /*public IActionResult Details(int id )
         {

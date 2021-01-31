@@ -24,7 +24,6 @@ namespace OPG
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
            
             services.AddScoped<IProductRepository, ProductRepository>();
-            //services.AddScoped<IProductRepository, MockProductRepository> ();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddControllersWithViews();
             services.AddMvc();
@@ -64,7 +63,7 @@ namespace OPG
                     new { controller = "Form", action = "login" }
                     );
                 
-            } );
+            });
         }
     }
 }
