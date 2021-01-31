@@ -7,5 +7,9 @@ namespace OPG.Models
     {
         IEnumerable<Product> AllProducts { get; }
         Product GetProductByID(int product_id);
+
+        void AddProduct ();
+        void AddPrice ();
+        void AddCategory ();
     }
 }

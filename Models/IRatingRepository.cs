@@ -1,8 +1,7 @@
-﻿
-namespace OPG.Models
+﻿namespace OPG.Models
 {
     public interface IRatingRepository
     {
-        
+        void AddRating ();
     }
 }

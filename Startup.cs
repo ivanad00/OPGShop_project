@@ -5,11 +5,14 @@ using Microsoft.Extensions.Hosting;
 using OPG.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using System;
+using Microsoft.Extensions.Logging;
 
 namespace OPG
 {
     public class Startup
     {
+
         public IConfiguration Configuration { get; }
 
         public Startup(IConfiguration configuration)
@@ -29,6 +32,7 @@ namespace OPG
             services.AddMvc();
             services.AddHttpContextAccessor ();
             services.AddSession ();
+            services.AddLogging ();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

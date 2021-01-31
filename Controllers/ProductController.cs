@@ -8,9 +8,9 @@ namespace OPG.Controllers
     {
         private readonly IProductRepository _productRepository;
         private readonly AppDbContext _appDbContext;
-            
 
-        public ProductController(IProductRepository productRepository, AppDbContext appDbContext)
+
+        public ProductController ( IProductRepository productRepository, AppDbContext appDbContext )
         {
             _productRepository = productRepository;
             _appDbContext = appDbContext;

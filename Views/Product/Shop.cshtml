@@ -1,18 +1,13 @@
-﻿@using OPG.Controllers
-@using OPG.Models
-@using OPG.Migrations
+﻿@model IEnumerable<Product>
 
+<header>
+   
+</header>
 
-@model IEnumerable<Product>
-<h1>Shop</h1>
-
-
-<p>Count: @Model.Count()</p>
 @foreach ( var p in Model )
 {
+
     <li>@p.ImageUrl.</li>
-    <li>@p.ProductId.ToString("c")</li>
+    <li>@p.ProductId.ToString( "c" )</li>
     <li>@p.Name</li>
 }
-
- 
