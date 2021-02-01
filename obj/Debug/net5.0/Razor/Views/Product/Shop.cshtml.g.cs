@@ -33,8 +33,15 @@ using OPG.Migrations;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\ivana\OneDrive\Documents\GitHub\OPG_dotnet\Views\_ViewImports.cshtml"
+using OPG.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a648ddd76ec5e99ef68c0e67493bb574b8299655", @"/Views/Product/Shop.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0cd2b487427c426beb7cc30b0b9c3d46c26bc00a", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b88da2c816ef40605b24adeabb57430f34a2b977", @"/Views/_ViewImports.cshtml")]
     public class Views_Product_Shop : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Product>>
     {
         #pragma warning disable 1998

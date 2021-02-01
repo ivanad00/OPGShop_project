@@ -1,43 +1,41 @@
-*
-{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
-    background-size:cover;
-
-
 }
 
-
-
 .hero {
+    margin: 0px;
+    padding: 26px !important;
     height: 100%;
     width: 100%;
     background-image: url("../images/lock111.jpg");
 }
 
-.form-box
-{
-    width:380px;
-    height:480px;
+
+
+.form-box {
+    width: 350px !important;
+    height: 480px !important;
     position: relative;
-    margin: 6% auto;
+    margin: 0% auto !important;
     padding: 5px;
     overflow: hidden;
 }
 
-.button-box
-{
-    width: 220px;
-    margin: 35px auto;
+
+.button-box {
+    width: 222px;
+    height: 50px;
+    margin: 56px auto;
     position: relative;
-    box-shadow: 0 0 20px 9px rgb(61, 78, 136);
+    box-shadow: 0 0 20px 9px rgb(61 78 136);
     border-radius: 30px;
 }
 
-.toggle-btn
-{
-    padding: 10px 30px;
+
+.toggle-btn {
+    padding: 14px 28px 4px 26px !important;
     cursor: pointer;
     background: transparent;
     border: 0;
@@ -48,29 +46,26 @@
 
 
 
-#btn
-{
-    top:0;
+#btn {
+    top: 0;
     left: 0;
     position: absolute;
-    width:110px;
+    width: 112px;
     height: 100%;
     background: linear-gradient(to right, rgb(165, 165, 201), rgb(70, 82, 121));
     border-radius: 30px;
     transition: .5s;
 }
 
-.input-group
-{
-    top:180px;
+.input-group {
+    top: 180px;
     position: absolute;
     width: 280px;
     transition: .5s;
-
 }
 
-.input-field
-{
+
+.input-field {
     width: 100%;
     padding: 10px 0;
     border-left: 0;
@@ -80,57 +75,50 @@
     border-bottom: 1px solid beige;
     outline: none;
     background: none;
-    text-emphasis-color:white;
-   
- 
+    text-emphasis-color: white;
 }
 
-.submit-btn
-{
+
+
+.submit-btn {
     width: 85%;
     padding: 10px 30px;
     cursor: pointer;
     display: block;
-    margin:auto;
+    margin-left: -1px;
     background: linear-gradient(to right, rgb(165, 165, 201), beige);
-    border:0;
+    border: 0;
     outline: none;
-    border-radius: 30px;
-
-}
-
-#login
-{
-    left:50px;
-}
-
-#register
-{
-    left:450px;
+    border-radius: 30px !important;
+    margin: 18px;
 }
 
 
 
+#login {
+    left: 50px;
+}
 
-.textbox i 
-{
+#register {
+    left: 350px;
+}
+
+
+
+
+.textbox i {
     width: 26px;
     float: left;
     text-align: center;
-
-
-
 }
 
-footer 
-{
+footer {
     background-color: rgb(222, 233, 247);
-    text-align:center;
+    text-align: center;
 }
 
 
-#copyright 
-{
+#copyright {
     margin-top: 0px;
     position: relative;
     display: block;
@@ -159,4 +147,4 @@ body
     left:50%;
     transform: translate(-50%,-50%);
     
-}
+}*/

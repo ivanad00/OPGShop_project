@@ -28,6 +28,7 @@ namespace OPG
            
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<Order> ( o => Order.GetOrder ( o ) );
             services.AddControllersWithViews();
             services.AddMvc();
             services.AddHttpContextAccessor ();
@@ -46,8 +47,9 @@ namespace OPG
             app.UseNodeModules ();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseRouting();
             app.UseSession ();
+            app.UseRouting();
+            
 
             app.UseEndpoints(endpoints =>
             {
@@ -66,8 +68,12 @@ namespace OPG
                     pattern: "{controller}/{action}/{id?}",
                     new { controller = "Form", action = "login" }
                     );
-                
-            });
+                endpoints.MapControllerRoute (
+                    name: "Register",
+                    pattern: "{controller}/{action}/{id?}",
+                    new { controller = "Order", action = "Cart" }
+                    );
+            } );
         }
     }
 }

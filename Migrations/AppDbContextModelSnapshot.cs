@@ -121,7 +121,10 @@ namespace OPG.Migrations
                     b.Property<int>("Amount")
                         .HasColumnType("int");
 
-                    b.Property<int?>("OrderId")
+                    b.Property<string>("OrderId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("OrderId1")
                         .HasColumnType("int");
 
                     b.Property<decimal>("Price")
@@ -132,7 +135,7 @@ namespace OPG.Migrations
 
                     b.HasKey("OrderProductId");
 
-                    b.HasIndex("OrderId");
+                    b.HasIndex("OrderId1");
 
                     b.HasIndex("ProductId");
 
@@ -177,6 +180,9 @@ namespace OPG.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
+
+                    b.Property<string>("Allowed")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("OrderId")
                         .HasColumnType("int");
@@ -289,6 +295,256 @@ namespace OPG.Migrations
                             Name = "Potato",
                             Price = 0m,
                             UserId = 5
+                        },
+                        new
+                        {
+                            ProductId = 6,
+                            CategoryId = 2,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Tomato ",
+                            Price = 0m,
+                            UserId = 2
+                        },
+                        new
+                        {
+                            ProductId = 7,
+                            CategoryId = 2,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Salad ",
+                            Price = 0m,
+                            UserId = 2
+                        },
+                        new
+                        {
+                            ProductId = 8,
+                            CategoryId = 2,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Onion",
+                            Price = 0m,
+                            UserId = 3
+                        },
+                        new
+                        {
+                            ProductId = 9,
+                            CategoryId = 2,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Broccoli ",
+                            Price = 0m,
+                            UserId = 4
+                        },
+                        new
+                        {
+                            ProductId = 10,
+                            CategoryId = 1,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Cauliflower ",
+                            Price = 0m,
+                            UserId = 2
+                        },
+                        new
+                        {
+                            ProductId = 11,
+                            CategoryId = 2,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Cucumber",
+                            Price = 0m,
+                            UserId = 2
+                        },
+                        new
+                        {
+                            ProductId = 12,
+                            CategoryId = 2,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Spinach ",
+                            Price = 0m,
+                            UserId = 2
+                        },
+                        new
+                        {
+                            ProductId = 13,
+                            CategoryId = 2,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Radish ",
+                            Price = 0m,
+                            UserId = 1
+                        },
+                        new
+                        {
+                            ProductId = 14,
+                            CategoryId = 2,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Celery ",
+                            Price = 0m,
+                            UserId = 3
+                        },
+                        new
+                        {
+                            ProductId = 15,
+                            CategoryId = 2,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Beans ",
+                            Price = 0m,
+                            UserId = 1
+                        },
+                        new
+                        {
+                            ProductId = 16,
+                            CategoryId = 1,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Pear ",
+                            Price = 0m,
+                            UserId = 2
+                        },
+                        new
+                        {
+                            ProductId = 17,
+                            CategoryId = 1,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Orange ",
+                            Price = 0m,
+                            UserId = 4
+                        },
+                        new
+                        {
+                            ProductId = 18,
+                            CategoryId = 1,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Lemon ",
+                            Price = 0m,
+                            UserId = 2
+                        },
+                        new
+                        {
+                            ProductId = 19,
+                            CategoryId = 1,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Strawberry ",
+                            Price = 0m,
+                            UserId = 3
+                        },
+                        new
+                        {
+                            ProductId = 20,
+                            CategoryId = 1,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Blackberry ",
+                            Price = 0m,
+                            UserId = 1
+                        },
+                        new
+                        {
+                            ProductId = 21,
+                            CategoryId = 1,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Raspberry ",
+                            Price = 0m,
+                            UserId = 4
+                        },
+                        new
+                        {
+                            ProductId = 22,
+                            CategoryId = 1,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Blueberry ",
+                            Price = 0m,
+                            UserId = 2
+                        },
+                        new
+                        {
+                            ProductId = 23,
+                            CategoryId = 1,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Grape ",
+                            Price = 0m,
+                            UserId = 2
+                        },
+                        new
+                        {
+                            ProductId = 24,
+                            CategoryId = 1,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Plum ",
+                            Price = 0m,
+                            UserId = 1
+                        },
+                        new
+                        {
+                            ProductId = 25,
+                            CategoryId = 1,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Watermelon ",
+                            Price = 0m,
+                            UserId = 2
+                        },
+                        new
+                        {
+                            ProductId = 26,
+                            CategoryId = 3,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Cheese ",
+                            Price = 0m,
+                            UserId = 3
+                        },
+                        new
+                        {
+                            ProductId = 27,
+                            CategoryId = 3,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Yogurt ",
+                            Price = 0m,
+                            UserId = 2
+                        },
+                        new
+                        {
+                            ProductId = 28,
+                            CategoryId = 3,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Milk ",
+                            Price = 0m,
+                            UserId = 1
+                        },
+                        new
+                        {
+                            ProductId = 29,
+                            CategoryId = 1,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Cherry",
+                            Price = 0m,
+                            UserId = 2
+                        },
+                        new
+                        {
+                            ProductId = 30,
+                            CategoryId = 2,
+                            Discount = 0f,
+                            ImageUrl = "",
+                            Name = "Eggplant ",
+                            Price = 0m,
+                            UserId = 4
                         });
                 });
 
@@ -331,49 +587,6 @@ namespace OPG.Migrations
                         {
                             RatingId = 3,
                             Note = "this product is 10/10"
-                        });
-                });
-
-            modelBuilder.Entity("OPG.Models.Seller", b =>
-                {
-                    b.Property<int>("SellerId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("CompanyName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Oib")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("SellerId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Seller");
-
-                    b.HasData(
-                        new
-                        {
-                            SellerId = 1,
-                            CompanyName = "OPG1",
-                            Oib = 123456789
-                        },
-                        new
-                        {
-                            SellerId = 2,
-                            CompanyName = "OPG2",
-                            Oib = 123456789
-                        },
-                        new
-                        {
-                            SellerId = 3,
-                            CompanyName = "OPG3",
-                            Oib = 123456789
                         });
                 });
 
@@ -498,26 +711,22 @@ namespace OPG.Migrations
 
             modelBuilder.Entity("OPG.Models.OrderProduct", b =>
                 {
-                    b.HasOne("OPG.Models.Order", "Order")
+                    b.HasOne("OPG.Models.Order", null)
                         .WithMany("OrderProduct")
-                        .HasForeignKey("OrderId");
+                        .HasForeignKey("OrderId1");
 
                     b.HasOne("OPG.Models.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId");
-
-                    b.Navigation("Order");
 
                     b.Navigation("Product");
                 });
 
             modelBuilder.Entity("OPG.Models.Payment", b =>
                 {
-                    b.HasOne("OPG.Models.Order", "Order")
+                    b.HasOne("OPG.Models.Order", null)
                         .WithMany("Payment")
                         .HasForeignKey("OrderId");
-
-                    b.Navigation("Order");
                 });
 
             modelBuilder.Entity("OPG.Models.Product", b =>
@@ -554,15 +763,6 @@ namespace OPG.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("OPG.Models.Seller", b =>
-                {
-                    b.HasOne("OPG.Models.User", "User")
-                        .WithMany("Seller")
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("OPG.Models.Category", b =>
                 {
                     b.Navigation("Product");
@@ -585,8 +785,6 @@ namespace OPG.Migrations
                     b.Navigation("Order");
 
                     b.Navigation("Rating");
-
-                    b.Navigation("Seller");
                 });
 #pragma warning restore 612, 618
         }
