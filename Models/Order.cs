@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -89,8 +88,8 @@ namespace OPG.Models
         {
             return OrderProducts ??
                    (OrderProducts =
-                       _appDbContext.OrderProduct.Where ( c => c.OrderId == OrderId )
-                           .Include ( s => s.Product )
+                       _appDbContext.OrderProduct.Where ( o => o.OrderId == OrderId )
+                           .Include ( o => o.Product )
                            .ToList ());
         }
 

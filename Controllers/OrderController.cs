@@ -1,11 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OPG.Models;
 using OPG.ViewModels;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OPG.Controllers
 {
@@ -42,7 +38,7 @@ namespace OPG.Controllers
             {
                 _order.AddToOrder ( selectedProduct, 1 );
             }
-            return RedirectToAction ( "Index" );
+            return RedirectToAction ( "Cart" );
         }
 
         public RedirectToActionResult RemoveFromOrder ( int productId )

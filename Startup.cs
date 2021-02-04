@@ -47,6 +47,7 @@ namespace OPG
             app.UseNodeModules ();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
             app.UseSession ();
             app.UseRouting();
             
@@ -69,7 +70,7 @@ namespace OPG
                     new { controller = "Form", action = "login" }
                     );
                 endpoints.MapControllerRoute (
-                    name: "Register",
+                    name: "ShoppingCart",
                     pattern: "{controller}/{action}/{id?}",
                     new { controller = "Order", action = "Cart" }
                     );

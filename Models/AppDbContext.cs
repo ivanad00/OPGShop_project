@@ -1,12 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace OPG.Models
 {
@@ -14,7 +6,6 @@ namespace OPG.Models
     {
         public AppDbContext ( DbContextOptions<AppDbContext> options ) : base ( options )
         {
-
         }
         public DbSet<Product> Product { get; set; }
         public DbSet<Category> Category { get; set; }
@@ -22,7 +13,6 @@ namespace OPG.Models
         public DbSet<OrderProduct> OrderProduct { get; set; }
         public DbSet<Payment> Payment { get; set; }
         public DbSet<Rating> Rating { get; set; }
-
         public DbSet<User> User  { get; set; }
         protected override void OnModelCreating ( ModelBuilder modelBuilder )
         {
@@ -39,7 +29,7 @@ namespace OPG.Models
                 Name = "Apple ",
                 CategoryId = 1,
                 UserId = 2,
-                ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/applepie.jpg",
+                ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
             {
@@ -279,8 +269,6 @@ namespace OPG.Models
                 UserId = 1,
                 FirstName = "Ivan",
                 LastName = "Ivanović",
-                Role = "Seller",
-                SellerId = 1,
                 Adress1 = "Ruđera Boškovića 28",
                 City = "Split",
                 ZipCode = 21000,
@@ -291,7 +279,6 @@ namespace OPG.Models
                 UserId = 2,
                 FirstName = "Nikola",
                 LastName = "Nikolić",
-                Role = "Customer",
                 Adress1 = "Ruđera Boškovića 20",
                 City = "Split",
                 ZipCode = 21000,
@@ -302,8 +289,6 @@ namespace OPG.Models
                 UserId = 3,
                 FirstName = "Ivana",
                 LastName = "Ivanović",
-                Role = "Seller",
-                SellerId = 2,
                 Adress1 = "Ruđera Boškovića 23",
                 City = "Split",
                 ZipCode = 21000,
@@ -325,7 +310,6 @@ namespace OPG.Models
                 UserId = 5,
                 FirstName = "Josipa",
                 LastName = "Ivanović",
-                Role = "Customer",
                 Adress1 = "Ruđera Boškovića 30",
                 City = "Split",
                 ZipCode = 21000,

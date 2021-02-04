@@ -41,7 +41,7 @@ using OPG.ViewModels;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"de7629862c70046a4c3af1f17e9a0f904797da2d", @"/Views/Order/Cart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b88da2c816ef40605b24adeabb57430f34a2b977", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d87c2d2e1487e4cc34e6ee49321fe6cc93de8af3", @"/Views/_ViewImports.cshtml")]
     public class Views_Order_Cart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<OrderViewModel>
     {
         #pragma warning disable 1998

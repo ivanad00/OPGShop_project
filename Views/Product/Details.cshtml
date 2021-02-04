@@ -1,4 +1,4 @@
-﻿@model ShopViewModel; 
+﻿@model Product
     <head>
         <title>OPG Shop Products List</title>
         <link rel="stylesheet" href="~/css/style_products.css">
@@ -9,19 +9,18 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     </head>
-    <div>
-        <div class="grid-container">
-            @foreach ( var p in Model.Product )
-            {
-                @*<div class="grid-container">*@
-            <div class="prod">
-                <a asp-controller="Product" asp-action="Details" asp-route-id="@p.ProductId">@p.Name</a>
-                @*<div>
-                    <a class="button" asp-controller="Order" asp-action="AddToOrder"
-                       asp-route-pieId="@Model.ProductId">Add to cart</a>
-                </div>*@
-            </div>
+<h2>@Model.Name</h2>
 
-            }
+<div class="thumbnail">
+    @*<img alt="@Model.Name" src="@Model.ImageUrl">*@
+    <div class="caption-full">
+        <h3 class="pull-right">@Model.Price</h3>
+        <h3>
+            <a href="#">@Model.Name</a>
+        </h3>
+        <div>
+            <a class="button" asp-controller="Order" asp-action="AddToOrder"
+               asp-route-pieId="@Model.ProductId">Order</a>
         </div>
     </div>
+</div>
