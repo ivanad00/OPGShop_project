@@ -1,0 +1,88 @@
+﻿* 
+{
+    box-sizing:border-box;
+}
+
+.fullpage 
+{
+   background-image:url(../images/cart.jpg); 
+    background-size:contain;
+}
+
+.table 
+{
+    width: 150%;
+    height: auto;
+}
+
+
+.table-striped 
+{
+    margin: 80px auto;
+    border-collapse:collapse;
+    width: 80%;
+    position:center;
+}
+
+
+.cart-info 
+{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+
+thead 
+{
+    background-color: rgb(222, 233, 247);
+}
+
+
+tbody, td, tfoot, th, thead, tr 
+{
+    border-color: darkgrey;
+}
+
+
+h2, h4 {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-weight: lighter;
+    font-family: system-ui;
+    text-align: center;
+    background: #fcfcfc;
+}
+
+#text-box {
+    background:snow;
+}
+
+.button {
+    height: 20px;
+}
+
+.btn-block {
+    text-align: right;
+    margin-right: 25px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    background: #fcfcfc;
+    height: 100px;
+}
+
+.section-box {
+    border-color: lightslategrey;
+    width: 850px;
+    height: 450px;
+    margin: 80px auto;
+    background: #FFFFFF;
+    box-shadow: 4px 3px 3px 4px rgba(0,0,0,0.10);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    background-color: lightyellow;
+
+}
+
+

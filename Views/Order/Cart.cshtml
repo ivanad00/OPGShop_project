@@ -1,36 +1,62 @@
 ﻿@model OrderViewModel
+    <head>
+        <link href="~/css/style_cart.css" rel="stylesheet" />
+    </head>
 
-<h2>Your shopping cart</h2>
-<h4>Here are the products in your shopping cart.</h4>
-<table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>Selected amount</th>
-            <th>Product</th>
-            <th class="text-right">Price</th>
-            <th class="text-right">Subtotal</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach ( var line in Model.Order.OrderProducts )
-        {
-            <tr>
-                <td class="text-center">@line.Amount</td>
-                <td class="text-left">@line.Product.Name</td>
-                <td class="text-right">@line.Product.Price.ToString( "c" )</td>
-                <td class="text-right">
-                    @((line.Amount * line.Product.Price).ToString("c"))
-                </td>
-            </tr>
-        }
-    </tbody>
-    <tfoot>
-        <tr>
-            <td colspan="3" class="text-right">Total:</td>
-            <td class="text-right">
-                @Model.OrderTotal.ToString( "c" )
-            </td>
-        </tr>
-    </tfoot>
-</table>
+    <body>
+        <div class="fullpage">
+            <div id="text-box">
+                <h2>Your shopping cart</h2>
+                <h4>Here are the products in your shopping cart. <i class="fas fa-shopping-bag"></i></h4>
+            </div>
 
+
+            <div class="section-box">
+                <table class="table table-bordered table-striped">
+                    <thead>
+
+                        <tr>
+                            <th>Selected amount</th>
+                            <th>Product</th>
+                            <th class="text-right">Price</th>
+                            <th class="text-right">Subtotal</th>
+
+                        </tr>
+                    </thead>
+
+
+                    <tbody>
+                        @foreach (var line in Model.Order.OrderProducts)
+                        {
+                            <tr>
+                                <td class="text-center">@line.Amount</td>
+                                <td class="text-left">@line.Product.Name</td>
+                                <td class="text-right">@line.Product.Price.ToString("c")</td>
+                                <td class="text-right">
+                                    @((line.Amount * line.Product.Price).ToString("c"))
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="text-left">Total:</td>
+                            <td class="text-left">
+                                @Model.OrderTotal.ToString("c")
+                            </td>
+
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="btn-block">
+                <button type="button" class="btn btn-link" asp-controller="Product" asp-action="Shop" onclick="redirectingProducts()">Back to shopping</button>
+                <button type="button" id="toggleBtn" class="btn btn-outline-success">Checkout</button>
+            </div>
+        </div>
+
+
+    </body>

@@ -28,3 +28,4 @@ function redirectingProducts() {
 function redirectingForms() {
     window.location = "http://localhost:5000/form/login"
 }
+

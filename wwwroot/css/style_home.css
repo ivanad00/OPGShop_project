@@ -10,6 +10,7 @@ padding : 0;
     position: sticky;
     top : 0;
     z-index: 10;
+    color:aqua;
 
 }
 
@@ -50,7 +51,7 @@ padding: 0 10px;
 .nav-link
 {
     color: #555!important;
-    font-weight: 600px;
+    font-weight: 600;
     font-size:16px;
 }
 
@@ -82,7 +83,7 @@ padding: 0 10px;
     display:block;
     height: 3px;
     width:170px;
-    margin: 20px auto 5 px;
+    margin: 20px auto 5px;
 
 }
 
