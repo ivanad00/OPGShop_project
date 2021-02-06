@@ -8,6 +8,9 @@ namespace OPG.Models
 {
     public class RatingRepository : IRatingRepository
     {
-        
+        public void AddRating ()
+        {
+            throw new NotImplementedException ();
+        }
     }
 }

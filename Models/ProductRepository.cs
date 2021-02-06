@@ -19,6 +19,21 @@ namespace OPG.Models
             }
         }
 
+        public void AddCategory ()
+        {
+            throw new System.NotImplementedException ();
+        }
+
+        public void AddPrice ()
+        {
+            throw new System.NotImplementedException ();
+        }
+
+        public void AddProduct ()
+        {
+            throw new System.NotImplementedException ();
+        }
+
         public Product GetProductByID ( int product_id )
         {
             return _appDbContext.Product.FirstOrDefault ( p => p.ProductId == product_id);

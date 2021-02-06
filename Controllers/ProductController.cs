@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OPG.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using OPG.ViewModels;
 
 namespace OPG.Controllers
 {
@@ -12,32 +8,25 @@ namespace OPG.Controllers
     {
         private readonly IProductRepository _productRepository;
         private readonly AppDbContext _appDbContext;
-            
 
-        public ProductController(IProductRepository productRepository, AppDbContext appDbContext)
+
+        public ProductController ( IProductRepository productRepository, AppDbContext appDbContext )
         {
             _productRepository = productRepository;
             _appDbContext = appDbContext;
         }
-        
-        public ViewResult List()
-        {
-            //var results = _appDbContext.Products.ToList();
-            return View(/*productRepository.AllProducts*/);
-        }
         public IActionResult Shop ()
         {
-            var results = _appDbContext.Product
-                .OrderBy(p=>p.Category )
-                .ToList();
-            return View (results.ToList());
+            ShopViewModel productsShopViewModel = new ShopViewModel ();
+            productsShopViewModel.Product = _productRepository.AllProducts;
+            return View ( productsShopViewModel);
         }
-        /*public IActionResult Details(int id )
+        public IActionResult Details (int id)
         {
             var product = _productRepository.GetProductByID ( id );
             if ( product == null )
-                return NotFound ();
+                return NotFound("Product does not exist.");
             return View ( product );
-        }*/
+        }
     }
 }

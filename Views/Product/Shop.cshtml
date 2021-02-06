@@ -1,13 +1,25 @@
-﻿@using OPG.Controllers
-@using OPG.Models
-@using OPG.Migrations
+﻿@model ShopViewModel; 
+<head>
+    <link rel="stylesheet" href="~/css/style_products.css">
+</head>
 
 
-@model IEnumerable<Product>
-<h1>Shop</h1>
 
-<p>Count: @Model.Count()</p>
-@foreach(var p in Model )
-{
-    <li>@p.Name</li>
-}
+    <body>
+      
+            <div class="grid-container">
+                @foreach (var p in Model.Product)
+                {
+                    @*<div class="grid-container">*@
+                    <div class="prod">
+                        <a asp-controller="Product" asp-action="Details" asp-route-id="@p.ProductId">@p.Name</a>
+                        @*<div>
+                            <a class="button" asp-controller="Order" asp-action="AddToOrder"
+                               asp-route-pieId="@Model.ProductId">Add to cart</a>
+                        </div>*@
+                    </div>
+
+                }
+            </div>
+     
+    </body>

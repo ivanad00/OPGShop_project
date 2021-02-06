@@ -22,9 +22,10 @@ function redirectingHomePage() {
 }
 
 function redirectingProducts() {
-    window.location ="http://localhost:5000/product/list"
+    window.location ="http://localhost:5000/product/shop"
 }
 
 function redirectingForms() {
     window.location = "http://localhost:5000/form/login"
 }
+

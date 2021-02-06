@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+
 
 namespace OPG.Models
 {
@@ -10,5 +7,9 @@ namespace OPG.Models
     {
         IEnumerable<Product> AllProducts { get; }
         Product GetProductByID(int product_id);
+
+        void AddProduct ();
+        void AddPrice ();
+        void AddCategory ();
     }
 }
