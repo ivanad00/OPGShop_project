@@ -10,7 +10,6 @@ padding : 0;
     position: sticky;
     top : 0;
     z-index: 10;
-    color:aqua;
 
 }
 
@@ -51,7 +50,7 @@ padding: 0 10px;
 .nav-link
 {
     color: #555!important;
-    font-weight: 600;
+    font-weight:0;
     font-size:16px;
 }
 

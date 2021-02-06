@@ -110,5 +110,7 @@ namespace OPG.Models
                 .Select ( c => c.Product.Price * c.Amount ).Sum ();
             return total;
         }
+
+      
     }
 }

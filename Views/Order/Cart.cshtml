@@ -54,9 +54,33 @@
 
             <div class="btn-block">
                 <button type="button" class="btn btn-link" asp-controller="Product" asp-action="Shop" onclick="redirectingProducts()">Back to shopping</button>
-                <button type="button" id="toggleBtn" class="btn btn-outline-success">Checkout</button>
+                <button type="button" class="btn btn-outline-success" onclick="showPayment()">Checkout</button>
+            </div>
+      
+
+            <div id="checkout" style="display:none">
+                <p>Pay with:</p>
+
+        <label class="container">
+
+                <input type="radio" checked="checked" name="radio"> Pay Cash
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+
+                <input type="radio" name="radio"> Pay Card
+                <span class="checkmark"></span>
+            </label>
+                <label class="container">
+
+                    <input type="radio" name="radio">  Pay Pal
+                    <span class="checkmark"></span>
+         </label>
+
+          <button type="button" class="btn btn-outline-success" asp-controller="Product" asp-action="PaymentSuccessfull" onclick="redirectingPaymentSuccessfull()">Confirm and pay</button>
+
+
             </div>
         </div>
-
-
+        <script src="~/js/app.js"></script>
     </body>
