@@ -28,5 +28,9 @@ namespace OPG.Controllers
                 return NotFound("Product does not exist.");
             return View ( product );
         }
+        public IActionResult PaymentSuccessfull ()
+        {
+            return View();
+        }
     }
 }

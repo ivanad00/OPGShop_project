@@ -254,4 +254,5 @@ C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\OPG.dll
 C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\ref\OPG.dll
 C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\OPG.pdb
 C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\OPG.genruntimeconfig.cache
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\Razor\Views\Product\PaymentSuccessfull.cshtml.g.cs
 C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\OPG.csprojAssemblyReference.cache

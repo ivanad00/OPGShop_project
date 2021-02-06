@@ -29,3 +29,13 @@ function redirectingForms() {
     window.location = "http://localhost:5000/form/login"
 }
 
+
+
+function showPayment() {
+    var x = document.getElementById("checkout");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
