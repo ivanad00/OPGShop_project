@@ -5,52 +5,48 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-
-
-
 namespace OPG.Models
 {
     public class Order
     {
         private readonly AppDbContext _appDbContext;
         public string OrderId { get; set; }
-        public ICollection<Payment> Payment { get; set; }
-        public List<OrderProduct> OrderProducts { get; set; }
+        public List<OrderItem> OrderItems { get; set; }
 
-        private Order (AppDbContext appDbContext)
+        private Order ( AppDbContext appDbContext )
         {
             _appDbContext = appDbContext;
 
         }
-        public static Order GetOrder(IServiceProvider services )
+        public static Order GetOrder ( IServiceProvider services )
         {
             ISession session = services.GetService<IHttpContextAccessor> ()?
                 .HttpContext.Session;
 
             var context = services.GetService<AppDbContext> ();
 
-            string order_id = session.GetString ( "OrderId" ) ?? Guid.NewGuid ().ToString ();
+            string orderId = session.GetString ( "OrderId" ) ?? Guid.NewGuid ().ToString ();
 
-            session.SetString ( "order_id", order_id );
-            return new Order ( context ) { OrderId = order_id };
+            session.SetString ( "orderId", orderId );
+            return new Order ( context ) { OrderId = orderId };
 
         }
         public void AddToOrder ( Product product, int amount )
         {
             var orderItem =
-                _appDbContext.OrderProduct.SingleOrDefault (
-                    o => o.Product.ProductId == product.ProductId && o.OrderId == OrderId );
+                _appDbContext.OrderItems.SingleOrDefault (
+                    s => s.Product.ProductId == product.ProductId && s.OrderId == OrderId );
 
             if ( orderItem == null )
             {
-                orderItem = new OrderProduct
+                orderItem = new OrderItem
                 {
                     OrderId = OrderId,
                     Product = product,
                     Amount = 1
                 };
 
-                _appDbContext.OrderProduct.Add ( orderItem );
+                _appDbContext.OrderItems.Add ( orderItem );
             }
             else
             {
@@ -58,10 +54,10 @@ namespace OPG.Models
             }
             _appDbContext.SaveChanges ();
         }
-        public int RemoveFromOrder( Product product )
+        public int RemoveFromOrder ( Product product )
         {
             var orderItem =
-                    _appDbContext.OrderProduct.SingleOrDefault (
+                    _appDbContext.OrderItems.SingleOrDefault (
                         o => o.Product.ProductId == product.ProductId && o.OrderId == OrderId );
 
             var localAmount = 0;
@@ -75,7 +71,7 @@ namespace OPG.Models
                 }
                 else
                 {
-                    _appDbContext.OrderProduct.Remove ( orderItem );
+                    _appDbContext.OrderItems.Remove ( orderItem );
                 }
             }
 
@@ -84,11 +80,11 @@ namespace OPG.Models
             return localAmount;
         }
 
-        public List<OrderProduct> GetOrderItems ()
+        public List<OrderItem> GetOrderItems ()
         {
-            return OrderProducts ??
-                   (OrderProducts =
-                       _appDbContext.OrderProduct.Where ( o => o.OrderId == OrderId )
+            return OrderItems ??
+                   (OrderItems =
+                       _appDbContext.OrderItems.Where ( o => o.OrderId == OrderId )
                            .Include ( o => o.Product )
                            .ToList ());
         }
@@ -96,21 +92,21 @@ namespace OPG.Models
         public void ClearOrder ()
         {
             var orderItems = _appDbContext
-                .OrderProduct
+                .OrderItems
                 .Where ( order => order.OrderId == OrderId );
 
-            _appDbContext.OrderProduct.RemoveRange ( orderItems );
+            _appDbContext.OrderItems.RemoveRange ( orderItems );
 
             _appDbContext.SaveChanges ();
         }
 
         public decimal GetOrderTotal ()
         {
-            var total = _appDbContext.OrderProduct.Where ( c => c.OrderId == OrderId )
+            var total = _appDbContext.OrderItems.Where ( c => c.OrderId == OrderId )
                 .Select ( c => c.Product.Price * c.Amount ).Sum ();
             return total;
         }
 
-      
+
     }
 }

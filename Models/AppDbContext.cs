@@ -7,13 +7,10 @@ namespace OPG.Models
         public AppDbContext ( DbContextOptions<AppDbContext> options ) : base ( options )
         {
         }
-        public DbSet<Product> Product { get; set; }
-        public DbSet<Category> Category { get; set; }
-        public DbSet<Order> Order { get; set; }
-        public DbSet<OrderProduct> OrderProduct { get; set; }
-        public DbSet<Payment> Payment { get; set; }
-        public DbSet<Rating> Rating { get; set; }
-        public DbSet<User> User  { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
+
         protected override void OnModelCreating ( ModelBuilder modelBuilder )
         {
             //seed categories
@@ -28,7 +25,6 @@ namespace OPG.Models
                 ProductId = 1,
                 Name = "Apple ",
                 CategoryId = 1,
-                UserId = 2,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -36,7 +32,6 @@ namespace OPG.Models
                 ProductId = 2,
                 Name = "Carrot",
                 CategoryId = 2,
-                UserId = 1,
                 ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/applepie.jpg",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -44,7 +39,6 @@ namespace OPG.Models
                 ProductId = 3,
                 Name = "Eggs",
                 CategoryId = 3,
-                UserId = 3,
                 ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/applepie.jpg",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -52,7 +46,6 @@ namespace OPG.Models
                 ProductId = 4,
                 Name = "Tuna",
                 CategoryId = 4,
-                UserId = 4,
                 ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/applepie.jpg",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -60,7 +53,6 @@ namespace OPG.Models
                 ProductId = 5,
                 Name = "Potato",
                 CategoryId = 2,
-                UserId = 5,
                 ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/applepie.jpg",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -68,7 +60,6 @@ namespace OPG.Models
                 ProductId = 6,
                 Name = "Tomato ",
                 CategoryId = 2,
-                UserId = 2,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -76,7 +67,6 @@ namespace OPG.Models
                 ProductId = 7,
                 Name = "Salad ",
                 CategoryId = 2,
-                UserId = 2,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -84,7 +74,6 @@ namespace OPG.Models
                 ProductId = 8,
                 Name = "Onion",
                 CategoryId = 2,
-                UserId = 3,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -92,7 +81,6 @@ namespace OPG.Models
                 ProductId = 9,
                 Name = "Broccoli ",
                 CategoryId = 2,
-                UserId = 4,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -100,7 +88,6 @@ namespace OPG.Models
                 ProductId = 10,
                 Name = "Cauliflower ",
                 CategoryId = 1,
-                UserId = 2,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -108,7 +95,6 @@ namespace OPG.Models
                 ProductId = 11,
                 Name = "Cucumber",
                 CategoryId = 2,
-                UserId = 2,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -116,7 +102,6 @@ namespace OPG.Models
                 ProductId = 12,
                 Name = "Spinach ",
                 CategoryId = 2,
-                UserId = 2,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -124,7 +109,6 @@ namespace OPG.Models
                 ProductId = 13,
                 Name = "Radish ",
                 CategoryId = 2,
-                UserId = 1,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -132,7 +116,6 @@ namespace OPG.Models
                 ProductId = 14,
                 Name = "Celery ",
                 CategoryId = 2,
-                UserId = 3,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -140,7 +123,6 @@ namespace OPG.Models
                 ProductId = 15,
                 Name = "Beans ",
                 CategoryId = 2,
-                UserId = 1,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -148,7 +130,6 @@ namespace OPG.Models
                 ProductId = 16,
                 Name = "Pear ",
                 CategoryId = 1,
-                UserId = 2,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -156,7 +137,6 @@ namespace OPG.Models
                 ProductId = 17,
                 Name = "Orange ",
                 CategoryId = 1,
-                UserId = 4,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -164,7 +144,6 @@ namespace OPG.Models
                 ProductId = 18,
                 Name = "Lemon ",
                 CategoryId = 1,
-                UserId = 2,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -172,7 +151,6 @@ namespace OPG.Models
                 ProductId = 19,
                 Name = "Strawberry ",
                 CategoryId = 1,
-                UserId = 3,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -180,7 +158,6 @@ namespace OPG.Models
                 ProductId = 20,
                 Name = "Blackberry ",
                 CategoryId = 1,
-                UserId = 1,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -188,7 +165,6 @@ namespace OPG.Models
                 ProductId = 21,
                 Name = "Raspberry ",
                 CategoryId = 1,
-                UserId = 4,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -196,7 +172,6 @@ namespace OPG.Models
                 ProductId = 22,
                 Name = "Blueberry ",
                 CategoryId = 1,
-                UserId = 2,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -204,7 +179,6 @@ namespace OPG.Models
                 ProductId = 23,
                 Name = "Grape ",
                 CategoryId = 1,
-                UserId = 2,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -212,7 +186,6 @@ namespace OPG.Models
                 ProductId = 24,
                 Name = "Plum ",
                 CategoryId = 1,
-                UserId = 1,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -220,7 +193,6 @@ namespace OPG.Models
                 ProductId = 25,
                 Name = "Watermelon ",
                 CategoryId = 1,
-                UserId = 2,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -228,7 +200,6 @@ namespace OPG.Models
                 ProductId = 26,
                 Name = "Cheese ",
                 CategoryId = 3,
-                UserId = 3,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -236,7 +207,6 @@ namespace OPG.Models
                 ProductId = 27,
                 Name = "Yogurt ",
                 CategoryId = 3,
-                UserId = 2,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -244,7 +214,6 @@ namespace OPG.Models
                 ProductId = 28,
                 Name = "Milk ",
                 CategoryId = 3,
-                UserId = 1,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -252,7 +221,6 @@ namespace OPG.Models
                 ProductId = 29,
                 Name = "Cherry",
                 CategoryId = 1,
-                UserId = 2,
                 ImageUrl = "",
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -260,144 +228,9 @@ namespace OPG.Models
                 ProductId = 30,
                 Name = "Eggplant ",
                 CategoryId = 2,
-                UserId = 4,
                 ImageUrl = "",
             } );
-            //seed users
-            modelBuilder.Entity<User> ().HasData ( new User
-            {
-                UserId = 1,
-                FirstName = "Ivan",
-                LastName = "Ivanović",
-                Adress1 = "Ruđera Boškovića 28",
-                City = "Split",
-                ZipCode = 21000,
-                Country = "Hrvatska"
-            } );
-            modelBuilder.Entity<User> ().HasData ( new User
-            {
-                UserId = 2,
-                FirstName = "Nikola",
-                LastName = "Nikolić",
-                Adress1 = "Ruđera Boškovića 20",
-                City = "Split",
-                ZipCode = 21000,
-                Country = "Hrvatska"
-            } );
-            modelBuilder.Entity<User> ().HasData ( new User
-            {
-                UserId = 3,
-                FirstName = "Ivana",
-                LastName = "Ivanović",
-                Adress1 = "Ruđera Boškovića 23",
-                City = "Split",
-                ZipCode = 21000,
-                Country = "Hrvatska"
-            } );
-            modelBuilder.Entity<User> ().HasData ( new User
-            {
-                UserId = 4,
-                FirstName = "Zoran",
-                LastName = "Nikolić",
-                Role = "Customer",
-                Adress1 = "Ruđera Boškovića 24",
-                City = "Split",
-                ZipCode = 21000,
-                Country = "Hrvatska"
-            } );
-            modelBuilder.Entity<User> ().HasData ( new User
-            {
-                UserId = 5,
-                FirstName = "Josipa",
-                LastName = "Ivanović",
-                Adress1 = "Ruđera Boškovića 30",
-                City = "Split",
-                ZipCode = 21000,
-                Country = "Hrvatska"
-            } );
-
-            ////seed Order
-            //modelBuilder.Entity<Order> ().HasData ( new Order
-            //{
-            //    OrderId = "1",
-            //    Price = 2.3m
-            //} );
-            //modelBuilder.Entity<Order> ().HasData ( new Order
-            //{
-            //    OrderId = "2",
-            //    Price = 3.5m
-            //} );
-            //modelBuilder.Entity<Order> ().HasData ( new Order
-            //{
-            //    OrderId = "3",
-            //    Price = 5.6m
-            //} );
-            //modelBuilder.Entity<Order> ().HasData ( new Order
-            //{
-            //    OrderId = "4",
-            //    Price = 2.3m
-            //} );
-            //modelBuilder.Entity<Order> ().HasData ( new Order
-            //{
-            //    OrderId = "5",
-            //    Price = 3.6m
-            //} );
-
-            //seed orderproduct
-            modelBuilder.Entity<OrderProduct> ().HasData ( new OrderProduct
-            {
-                OrderProductId = 1,
-                Price = 2.3m
-            } );
-            modelBuilder.Entity<OrderProduct> ().HasData ( new OrderProduct
-            {
-                OrderProductId = 2,
-                Price = 4.6m
-            } );
-            modelBuilder.Entity<OrderProduct> ().HasData ( new OrderProduct
-            {
-                OrderProductId = 3,
-                Price = 5.5m
-            } );
-            modelBuilder.Entity<OrderProduct> ().HasData ( new OrderProduct
-            {
-                OrderProductId = 4,
-                Price = 6.6m
-            } );
-            modelBuilder.Entity<OrderProduct> ().HasData ( new OrderProduct
-            {
-                OrderProductId = 5,
-                Price = 5.2m
-            } );
-            //seed payment
-            modelBuilder.Entity<Payment> ().HasData ( new Payment
-            {
-                PaymentId = 1,
-                PaymentType = "Paypal"
-            } );
-            modelBuilder.Entity<Payment> ().HasData ( new Payment
-            {
-                PaymentId = 2,
-                PaymentType = "Credit Card"
-            } );
-
-            //seed rating
-            modelBuilder.Entity<Rating> ().HasData ( new Rating
-            {
-                RatingId = 1,
-                Note = "this is good"
-            } );
-            modelBuilder.Entity<Rating> ().HasData ( new Rating
-            {
-                RatingId = 2,
-                Note = "this product is 3/10"
-            } );
-            modelBuilder.Entity<Rating> ().HasData ( new Rating
-            {
-                RatingId = 3,
-                Note = "this product is 10/10"
-            } );
-
+          
         }
 
     }

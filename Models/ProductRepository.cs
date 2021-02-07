@@ -15,7 +15,7 @@ namespace OPG.Models
         {
             get
             {
-                return _appDbContext.Product.Include(c => c.Category );
+                return _appDbContext.Products.Include(c => c.Category );
             }
         }
 
@@ -36,7 +36,7 @@ namespace OPG.Models
 
         public Product GetProductByID ( int product_id )
         {
-            return _appDbContext.Product.FirstOrDefault ( p => p.ProductId == product_id);
+            return _appDbContext.Products.FirstOrDefault ( p => p.ProductId == product_id);
         }
     }
 }

@@ -28,7 +28,7 @@ namespace OPG
            
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
-            services.AddScoped<Order> ( o => Order.GetOrder ( o ) );
+            services.AddScoped<Order> ( sp => Order.GetOrder ( sp ) );
             services.AddControllersWithViews();
             services.AddMvc();
             services.AddHttpContextAccessor ();

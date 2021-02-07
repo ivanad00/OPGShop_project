@@ -19,7 +19,7 @@ namespace OPG.Controllers
         public ViewResult Cart ()
         {
             var items = _order.GetOrderItems ();
-            _order.OrderProducts = items;
+            _order.OrderItems = items;
 
             var shoppingCartViewModel = new OrderViewModel
             {
@@ -49,8 +49,8 @@ namespace OPG.Controllers
             {
                 _order.RemoveFromOrder ( selectedProduct );
             }
-            return RedirectToAction ( "Index" );
+            return RedirectToAction ( "Cart" );
         }
     }
-    
+
 }
