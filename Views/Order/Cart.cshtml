@@ -1,5 +1,4 @@
 ﻿@model OrderViewModel
-
 <head>
     <link href="~/css/style_cart.css" rel="stylesheet" />
 </head>
@@ -27,61 +26,67 @@
 
 
                 <tbody>
-ž                    @foreach (var line in Model.Order.OrderItems)
-                        {
-                         <tr>
-                            <td class="text-center">t</td>
-                         <td class="text-left">e</td>
-                            <td class="text-right">)</td>
+                    @foreach (var line in Model.Order.OrderItems)
+                    {
+                        <tr>
+                            <td class="text-center">@line.Amount</td>
+                            <td class="text-left">@line.Product.Name</td>
+                            <td class="text-right">@line.Product.Price.ToString("c")</td>
                             <td class="text-right">
-                             @((line.Amount * line.Product.Price).ToString("c"))
+                                @((line.Amount * line.Product.Price).ToString("c"))
                             </td>
                         </tr>
-                        }                       
+                    }
 
                 </tbody>
 
-<tfoot>
-    <tr>
-        <td colspan="3" class="text-left">Total:</td>
-        <td class="text-left">
-            @Model.OrderTotal.ToString("c")
-        </td>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-left">Total:</td>
+                        <td class="text-left">
+                            @Model.OrderTotal.ToString("c")
+                        </td>
 
-       </tr>
-</tfoot>
-</table>
-</div>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div id="checkout" style="display:none">
+            <p>Pay with:</p>
 
-<div class="btn-block">
-    <button type="button" class="btn btn-link" asp-controller="Product" asp-action="Shop" onclick="redirectingProducts()">Back to shopping</button>
-    <button type="button" class="btn btn-outline-success" onclick="showPayment()">Checkout</button>
-</div>
+            <label class="container">
 
+                <input type="radio" checked="checked" name="radio"> Pay Cash
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
 
-<div id="checkout" style="display:none">
-    <p>Pay with:</p>
+                <input type="radio" name="radio"> Pay Card
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
 
-    <label class="container">
+                <input type="radio" name="radio">  Pay Pal
+                <span class="checkmark"></span>
+            </label>
 
-        <input type="radio" checked="checked" name="radio"> Pay Cash
-        <span class="checkmark"></span>
-    </label>
-    <label class="container">
+            <p class="button">
+                <button type="button" class="btn btn-outline-success" asp-controller="Product" asp-action="EndOrder" onclick="redirectingPaymentSuccessfull()">Confirm and pay</button>
+            </p>
 
-        <input type="radio" name="radio"> Pay Card
-        <span class="checkmark"></span>
-    </label>
-    <label class="container">
-
-        <input type="radio" name="radio">  Pay Pal
-        <span class="checkmark"></span>
-    </label>
-
-    <button type="button" class="btn btn-outline-success" asp-controller="Product" asp-action="PaymentSuccessfull" onclick="redirectingPaymentSuccessfull()">Confirm and pay</button>
+        </div>
 
 
-</div>
-</div>
-<script src="~/js/app.js"></script>
+        <div class="btn-block">
+            <button type="button" class="btn btn-link" asp-controller="Product" asp-action="Shop" onclick="redirectingProducts()">Back to shopping</button>
+            <button type="button" class="btn btn-outline-success" onclick="showPayment()">Checkout</button>
+        </div>
+
+
+
+
+        @*<button type="button" class="btn btn-outline-success" asp-controller="Product" asp-action="EndOrder" onclick="redirectingPaymentSuccessfull()">Confirm and pay</button>*@
+
+    </div>
+    <script src="~/js/app.js"></script>
 </body>

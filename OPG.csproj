@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\images\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="Views\Home\index.cshtml" />
     <None Include="Views\Product\list.cshtml" />
   </ItemGroup>
