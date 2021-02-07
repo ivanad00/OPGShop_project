@@ -23,7 +23,7 @@ namespace OPG.Models
             modelBuilder.Entity<Product> ().HasData ( new Product
             {
                 ProductId = 1,
-                Name = "Apple ",
+                Name = "Apple",
                 CategoryId = 1,
                 ImageUrl = "",
             } );

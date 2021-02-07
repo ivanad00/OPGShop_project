@@ -27,7 +27,7 @@ namespace OPG.Models
 
             string orderId = session.GetString ( "OrderId" ) ?? Guid.NewGuid ().ToString ();
 
-            session.SetString ( "orderId", orderId );
+            session.SetString ( "OrderId", orderId );
             return new Order ( context ) { OrderId = orderId };
 
         }
@@ -46,7 +46,7 @@ namespace OPG.Models
                     Amount = 1
                 };
 
-                _appDbContext.OrderItems.Add ( orderItem );
+                _appDbContext.OrderItems.Add( orderItem );
             }
             else
             {
@@ -58,7 +58,7 @@ namespace OPG.Models
         {
             var orderItem =
                     _appDbContext.OrderItems.SingleOrDefault (
-                        o => o.Product.ProductId == product.ProductId && o.OrderId == OrderId );
+                        s => s.Product.ProductId == product.ProductId && s.OrderId == OrderId );
 
             var localAmount = 0;
 
@@ -84,8 +84,8 @@ namespace OPG.Models
         {
             return OrderItems ??
                    (OrderItems =
-                       _appDbContext.OrderItems.Where ( o => o.OrderId == OrderId )
-                           .Include ( o => o.Product )
+                       _appDbContext.OrderItems.Where ( c => c.OrderId == OrderId )
+                           .Include ( s => s.Product )
                            .ToList ());
         }
 

@@ -18,25 +18,9 @@ namespace OPG.Models
                 return _appDbContext.Products.Include(c => c.Category );
             }
         }
-
-        public void AddCategory ()
+        public Product GetProductByID ( int productId )
         {
-            throw new System.NotImplementedException ();
-        }
-
-        public void AddPrice ()
-        {
-            throw new System.NotImplementedException ();
-        }
-
-        public void AddProduct ()
-        {
-            throw new System.NotImplementedException ();
-        }
-
-        public Product GetProductByID ( int product_id )
-        {
-            return _appDbContext.Products.FirstOrDefault ( p => p.ProductId == product_id);
+            return _appDbContext.Products.FirstOrDefault ( p => p.ProductId == productId);
         }
     }
 }
