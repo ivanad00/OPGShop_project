@@ -10,7 +10,8 @@ namespace OPG.Models
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
-
+        public DbSet<OrderForm> OrderForms { get; set; }
+        public DbSet<OrderFormDetail> OrderFormDetails { get; set; }
         protected override void OnModelCreating ( ModelBuilder modelBuilder )
         {
             //seed categories
@@ -47,6 +48,7 @@ namespace OPG.Models
                 Name = "Tuna",
                 CategoryId = 4,
                 ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/applepie.jpg",
+                
             } );
             modelBuilder.Entity<Product> ().HasData ( new Product
             {

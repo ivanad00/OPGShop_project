@@ -46,7 +46,7 @@ namespace OPG.Models
                     Amount = 1
                 };
 
-                _appDbContext.OrderItems.Add( orderItem );
+                _appDbContext.OrderItems.Add ( orderItem );
             }
             else
             {
