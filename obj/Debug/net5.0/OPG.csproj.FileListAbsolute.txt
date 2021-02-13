@@ -348,4 +348,3 @@ C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Views\OrderForm\
 C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\Razor\Views\Contact\Index.cshtml.g.cs
 C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\Razor\Views\OrderForm\Checkout.cshtml.g.cs
 C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\Razor\Views\OrderForm\CheckoutComplete.cshtml.g.cs
-C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\OPG.csprojAssemblyReference.cache

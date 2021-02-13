@@ -141,7 +141,7 @@ namespace OPG.Models
                 CategoryId = 1,
                 ImageUrl = "/images/cherryy.jpg",
                 ProductDescription = "The cherry is a fruit that is consumed fresh or in cakes, mousses, jams and fruit stews. The larger cherries are usually the ones with better taste and texture.",
-                Price=10
+                Price=20
 
             });
 
@@ -173,7 +173,8 @@ namespace OPG.Models
                 Name = "Salad ",
                 CategoryId = 2,
                 ImageUrl = "/images/salad.jpg",
-                ProductDescription = ""
+                ProductDescription = "Green Leaf lettuce is best suited for fresh applications and is most commonly used as a wrap, garnish, in salads, or as a layer in a sandwich. It is crisp and has a sweet or bitter smell when the stalk is scratched, depending on the specific variety",
+                Price=5
 
             });
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -196,22 +197,24 @@ namespace OPG.Models
                 Price=20
 
             });
-            modelBuilder.Entity<Product> ().HasData ( new Product
+            modelBuilder.Entity<Product>().HasData(new Product
             {
                 ProductId = 18,
                 Name = "Cauliflower ",
                 CategoryId = 2,
                 ImageUrl = "/images/cauliflower.jpg",
-                ProductDescription = ""
+                ProductDescription = "The cauliflower is a vegetable that belongs to the cabbage family. The part that one consumes is the flower or inflorescence, highly appreciated for its taste. It can be presented in many ways, both raw and cooked. It is an important source of vitamins and minerals. In addition, it contributes with fibber and it is low in calories.",
+                Price = 12
 
-            });
+            }) ;
             modelBuilder.Entity<Product> ().HasData ( new Product
             {
                 ProductId = 19,
                 Name = "Cucumber",
                 CategoryId = 2,
                 ImageUrl = "/images/cucumbers.jpg",
-                ProductDescription = ""
+                ProductDescription = "Cucumber is a summer vegetable with elongate shape. Its skin is of a green colour, turning into yellow in maturation. At present, it is found in the European markets all over the year. Fresh or pickled cucumbers are also available",
+                Price=7
 
             });
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -220,7 +223,8 @@ namespace OPG.Models
                 Name = "Spinach ",
                 CategoryId = 2,
                 ImageUrl = "/images/spinach.jpeg",
-                ProductDescription = ""
+                ProductDescription = "Spinach is a herbaceous plant whose leaves, green and arranged in rosette, are eaten raw or cooked. The leaves have an oval shape and are wrinkled. It is a very nutritious, tasteful and easy-to-digest plant. Like most of the leafy vegetables, it has a great content of water and a low percentage of proteins, carbohydrates and lipids. It stands out for its high nutritional richness, since its vitamin and mineral content is higher than the rest of vegetables.",
+                Price=30
 
             });
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -229,8 +233,8 @@ namespace OPG.Models
                 Name = "Radish ",
                 CategoryId = 2,
                 ImageUrl = "/images/radish.jpg",
-                ProductDescription = ""
-
+                ProductDescription = "Radish is the fleshy root that is obtained from the plant with the same name. It has a pungent taste and it is consumed as a vegetable. There are varieties of spherical, conical, cylindrical and oval shape. They are covered by a rind of diverse colours; red, white, purple, black or red and white, although the most frequent varieties are red. ",
+                Price =30
             });
             modelBuilder.Entity<Product> ().HasData ( new Product
             {
@@ -238,8 +242,8 @@ namespace OPG.Models
                 Name = "Celery ",
                 CategoryId = 2,
                 ImageUrl = "/images/celery.jpg",
-                ProductDescription = ""
-
+                ProductDescription = "Celery is a vegetable with long petioles, meaty and succulent that are known by the name of stalks. They may be eaten raw in salads or alone, fried, boiled, with sauces and as a condiment for soups, stews, etc. It can also be used as an aromatic and besides the stalks, the leaves and seeds of the plant are used. ",
+                Price=30
             });
             modelBuilder.Entity<Product> ().HasData ( new Product
             {
@@ -247,7 +251,8 @@ namespace OPG.Models
                 Name = "Beans ",
                 CategoryId = 2,
                 ImageUrl = "/images/beans.jpg",
-                ProductDescription = ""
+                ProductDescription = "Beans are a great source of fiber. They can be cooked in many different ways, including boiling, frying, and baking. Beans are a summer crop that needs warm temperatures to grow and one of the longest-cultivated plants.",
+                Price=30
 
             });
             modelBuilder.Entity<Product>().HasData(new Product
@@ -256,7 +261,8 @@ namespace OPG.Models
                 Name = "Carrot",
                 CategoryId = 2,
                 ImageUrl = "/images/carrot.jpg",
-                ProductDescription = ""
+                ProductDescription = "The carrot is one of the most cultivated vegetables in the world. Its consumption has spreaded widely, since at present it is available all the year round. The part of the carrot that we consume is its root, of which there are various shapes and tastes. It stands out for its carotene and vitamin A, B and C content",
+                Price=8
 
             });
             modelBuilder.Entity<Product>().HasData(new Product
@@ -265,7 +271,8 @@ namespace OPG.Models
                 Name = "Eggplant ",
                 CategoryId = 2,
                 ImageUrl = "/images/eggplant.jpg",
-                ProductDescription = ""
+                ProductDescription = "Eggplant are members of the same plant family as tomatoes and peppers, but more vunerable to cold temperatures than tomatoes. A large selection of varieties makes eggplants available in several colors and shape, but they are usually purplish black and oval shape.",
+                Price=20
 
             });
 
@@ -279,7 +286,8 @@ namespace OPG.Models
                 Name = "Cheese ",
                 CategoryId = 3,
                 ImageUrl = "/images/cheese.jpg",
-                ProductDescription = ""
+                ProductDescription = "Cheese is a preserved form of milk made by the coagulation, draining or pressing, and salting of the milk proteins and fats. It is popular for its longevity and nutritional value. Cheese is a stable food with a longer shelf life than milk, and it is an affordable food for any budget. There are numerous styles, shapes, tastes, and textures of cheese.",
+                Price = 60
 
             });
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -288,7 +296,8 @@ namespace OPG.Models
                 Name = "Yogurt ",
                 CategoryId = 3,
                 ImageUrl = "/images/yogurt.jpg",
-                ProductDescription = ""
+                ProductDescription = "The basic production of homemade yogurt is fairly simple: milk is heated and combined with a starter yogurt culture, most often spoonfuls of a batch of yogurt that is already made. The milk mixture is kept at a warm temperature for at least eight hours, letting those cultures bloom, resulting in creamy tasty yogurt.",
+                Price=20
 
             });
             modelBuilder.Entity<Product> ().HasData ( new Product
@@ -297,7 +306,8 @@ namespace OPG.Models
                 Name = "Milk ",
                 CategoryId = 3,
                 ImageUrl = "/images/milk.jpg",
-                ProductDescription = ""
+                ProductDescription = "Liquid milk is the most consumed, processed and marketed dairy product. Worldwide, less and less liquid milk is consumed in its raw form.",
+                Price= 8
 
             });
 
@@ -309,7 +319,8 @@ namespace OPG.Models
                 Name = "Eggs",
                 CategoryId = 3,
                 ImageUrl = "/images/eggs.jpg",
-                ProductDescription = ""
+                ProductDescription = "Chicken eggs are the most commonly eaten egg, which are typically classified and sold in four standard sizes. Eggs contain the highest quality protein you can buy.",
+                Price=2
 
             });
 
@@ -319,7 +330,8 @@ namespace OPG.Models
                 Name = "Tuna",
                 CategoryId = 4,
                 ImageUrl = "/images/tuna.jpg",
-                ProductDescription = ""
+                ProductDescription = "Tuna is a good source of essential nutrients, such as omega-3 fatty acids, high quality protein, selenium and Vitamin D.",
+                Price=70
 
 
             });
