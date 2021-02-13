@@ -12,8 +12,9 @@
 
 
 #fullpage {
-    background-image: url('../images/products.png');
+    background-image: url('../images/product.png');
     background-size:cover;
+
 }
 
 .prod {
@@ -184,10 +185,3 @@ a {
 
 
 
-/* checkout */
-
-
-/*form.form-horizontal {
-    width:100%;
-    text-align: -webkit-center;
-}*/

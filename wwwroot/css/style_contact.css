@@ -5,7 +5,7 @@
     padding-top: 100px;
     padding-bottom: 50px;
     font-family: 'Font Awesome 5 Free';
-    background-image: url('/images/contact1.png');
+    background-image: url('/images/contact.png');
     background-size:cover;
     font-size:25px;
     color:darkslategrey;
@@ -13,7 +13,8 @@
 }
 
 
-button {
+button 
+{
     
     color: darkslategray;
     width: 100px;
@@ -27,7 +28,8 @@ a {
     font-size: 18px;
 }
 
-.section-box {
+.section-box 
+{
     width: 350px;
     height: 170px;
     background:none;
@@ -37,10 +39,47 @@ a {
 
 .section-box:hover 
 {
-   -webkit-transform: translateY(-5px);
-   -ms-transform: translateY(-5px);
-   transform: translateY(-5px);
-   -webkit-box-shadow: 0px 14px 32px 0px rgba(94, 40, 40, 0.2);
-   box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(94, 40, 40, 0.2);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.2);
+}
 
+
+h4 
+{
+    font-weight: lighter;
+    font-family: system-ui;
+    text-align: center;
+    background: none;
+}
+
+
+
+.form-group 
+{
+    text-align: center;
+    clear: both;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top:20px;
+}
+
+#form 
+{
+    background-image:url('/images/checkout.png');
+    background-size: cover;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #1e32656b;
+    border-radius: 25px;
+    outline: none;
+    border-color: #1e32656b;
+    margin-bottom: 40px;
+    margin-top:10px;
 }
