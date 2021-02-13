@@ -1,0 +1,46 @@
+﻿.contact 
+{
+    height:520px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-family: 'Font Awesome 5 Free';
+    background-image: url('/images/contact1.png');
+    background-size:cover;
+    font-size:25px;
+    color:darkslategrey;
+
+}
+
+
+button {
+    
+    color: darkslategray;
+    width: 100px;
+    border-radius: 30px;
+
+}
+
+a {
+    color: maroon;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.section-box {
+    width: 350px;
+    height: 170px;
+    background:none;
+    transition:0.5s ease;
+    margin:auto;
+}
+
+.section-box:hover 
+{
+   -webkit-transform: translateY(-5px);
+   -ms-transform: translateY(-5px);
+   transform: translateY(-5px);
+   -webkit-box-shadow: 0px 14px 32px 0px rgba(94, 40, 40, 0.2);
+   box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.2);
+
+}
