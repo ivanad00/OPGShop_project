@@ -2,15 +2,17 @@
 <head>
     <link rel="stylesheet" href="~/css/style_products.css">
 </head>
-<h2>@Model.Name</h2>
+@*<h2>@Model.Name</h2>*@
 
 <div class="thumbnail section-box">
-    @*<img alt="@Model.Name" src="@Model.ImageUrl">*@
+
+    <h3><a href="#">@Model.Name</a></h3>
+
+    <img alt="@Model.Name" class="align-content-center" src="@Url.Content(@Model.ImageUrl)">
+    <h5 class="justify-content-around">@Model.ProductDescription</h5>
     <div class="caption-full">
-        <h3 class="pull-right">@Model.Price</h3>
-        <h3>
-            <a href="#">@Model.Name</a>
-        </h3>
+        <h4 class="center">@Model.Price kn</h4>
+
         <div>
             <a class="button" asp-controller="Order" asp-action="AddToOrder"
                asp-route-ProductId="@Model.ProductId">Order</a>

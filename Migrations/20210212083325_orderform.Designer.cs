@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OPG.Models;
 
 namespace OPG.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210212083325_orderform")]
+    partial class orderform
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -205,300 +207,270 @@ namespace OPG.Migrations
                             ProductId = 1,
                             CategoryId = 1,
                             Discount = 0f,
-                            ImageUrl = "/images/apple.jpg",
+                            ImageUrl = "",
                             Name = "Apple",
-                            Price = 10m,
-                            ProductDescription = "Apples are the ideal fruit to eat at any time, having a positive role in the achievement of nourish balance. Their skin may be green, yellow or reddish, and the meat taste ranges from a bitter to sweet flavour. It is one of the most consumed fruit in the world"
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 2,
-                            CategoryId = 1,
+                            CategoryId = 2,
                             Discount = 0f,
-                            ImageUrl = "/images/pear.jpg",
-                            Name = "Pear ",
-                            Price = 10m,
-                            ProductDescription = "The pear is a fruit that has expanded all over the world; it is consumed both fresh as cooked, and that is available all throughout the year. There are multiple varieties cultivated, ranging in shape, size and colour."
+                            ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/applepie.jpg",
+                            Name = "Carrot",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 3,
-                            CategoryId = 1,
+                            CategoryId = 3,
                             Discount = 0f,
-                            ImageUrl = "/images/lemon.jpg",
-                            Name = "Lemon ",
-                            Price = 14m,
-                            ProductDescription = "The lemon is rounded and slightly elongated, it belongs to the family of citrus fruit and therefore it shares many of the characteristics of other species of citruses. The skin is yellow. It is used fresh for cooking, and its juice is used in the industry for processed foodstuffs."
+                            ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/applepie.jpg",
+                            Name = "Eggs",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 4,
-                            CategoryId = 1,
+                            CategoryId = 4,
                             Discount = 0f,
-                            ImageUrl = "/images/orange.jpg",
-                            Name = "Orange ",
-                            Price = 9m,
-                            ProductDescription = "Oranges are highly valued for their vitamin C content. This wonderful fruit has more to offer nutritionally than just this one nutrient. Most of the consumption of oranges is in the form of juice. "
+                            ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/applepie.jpg",
+                            Name = "Tuna",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 5,
-                            CategoryId = 1,
+                            CategoryId = 2,
                             Discount = 0f,
-                            ImageUrl = "/images/plum.jpg",
-                            Name = "Plum ",
-                            Price = 5m,
-                            ProductDescription = "The plum is a stone fruit, rounded or elongated that can be yellow, green, red or purple. In general, it is very nutritious and rich in vitamins, specially vitamin C. It is more or less juicy depending on its water content."
+                            ImageUrl = "https://gillcleerenpluralsight.blob.core.windows.net/files/applepie.jpg",
+                            Name = "Potato",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 6,
-                            CategoryId = 1,
+                            CategoryId = 2,
                             Discount = 0f,
-                            ImageUrl = "/images/strawberry.jpg",
-                            Name = "Strawberry ",
-                            Price = 20m,
-                            ProductDescription = "Strawberries are highly appreciated for their pleasant aroma and as an appetite stimulator. It is rich in basic minerals, which confers it the property to stimulate the metabolism. It is eaten raw and used to make jam."
+                            ImageUrl = "",
+                            Name = "Tomato ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 7,
-                            CategoryId = 1,
+                            CategoryId = 2,
                             Discount = 0f,
-                            ImageUrl = "/images/blackberry.jpg",
-                            Name = "Blackberry ",
-                            Price = 25m,
-                            ProductDescription = "Blackberries contain a wide array of important nutrients including potassium, magnesium and calcium, as well as vitamins A, C, E and most of our B vitamins. They are also a rich source of anthocyanins, powerful antioxidants that give blackberries their deep purple colour."
+                            ImageUrl = "",
+                            Name = "Salad ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 8,
-                            CategoryId = 1,
+                            CategoryId = 2,
                             Discount = 0f,
-                            ImageUrl = "/images/raspberry.jpg",
-                            Name = "Raspberry ",
-                            Price = 28m,
-                            ProductDescription = "Raspberries are a delicious fruit that are often described as being both tart and sweet. The riper that they are, the sweeter they will taste and the more intense their flavor will be."
+                            ImageUrl = "",
+                            Name = "Onion",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 9,
-                            CategoryId = 1,
+                            CategoryId = 2,
                             Discount = 0f,
-                            ImageUrl = "/images/blueberry.jpg",
-                            Name = "Blueberry ",
-                            Price = 28m,
-                            ProductDescription = "The blueberry pulp is aromatic, juicy and somewhat acid. It contains multiple small brown seeds. In the upper part, this fruit has a small crown that differentiates it from the black currant."
+                            ImageUrl = "",
+                            Name = "Broccoli ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 10,
                             CategoryId = 1,
                             Discount = 0f,
-                            ImageUrl = "/images/grape.jpg",
-                            Name = "Grape ",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Cauliflower ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 11,
-                            CategoryId = 1,
+                            CategoryId = 2,
                             Discount = 0f,
-                            ImageUrl = "/images/watermelon.jpg",
-                            Name = "Watermelon ",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Cucumber",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 12,
-                            CategoryId = 1,
+                            CategoryId = 2,
                             Discount = 0f,
-                            ImageUrl = "/images/cherry.jpg",
-                            Name = "Cherry",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Spinach ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 13,
                             CategoryId = 2,
                             Discount = 0f,
-                            ImageUrl = "/images/potato.jpg",
-                            Name = "Potato",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Radish ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 14,
                             CategoryId = 2,
                             Discount = 0f,
-                            ImageUrl = "/images/tomato.jpg",
-                            Name = "Tomato ",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Celery ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 15,
                             CategoryId = 2,
                             Discount = 0f,
-                            ImageUrl = "/images/salad.jpg",
-                            Name = "Salad ",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Beans ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 16,
-                            CategoryId = 2,
+                            CategoryId = 1,
                             Discount = 0f,
-                            ImageUrl = "/images/onion.jpg",
-                            Name = "Onion",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Pear ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 17,
-                            CategoryId = 2,
+                            CategoryId = 1,
                             Discount = 0f,
-                            ImageUrl = "/images/broccoli.jpg",
-                            Name = "Broccoli ",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Orange ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 18,
-                            CategoryId = 2,
+                            CategoryId = 1,
                             Discount = 0f,
-                            ImageUrl = "/images/cauliflower.jpg",
-                            Name = "Cauliflower ",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Lemon ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 19,
-                            CategoryId = 2,
+                            CategoryId = 1,
                             Discount = 0f,
-                            ImageUrl = "/images/cucumbers.jpg",
-                            Name = "Cucumber",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Strawberry ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 20,
-                            CategoryId = 2,
+                            CategoryId = 1,
                             Discount = 0f,
-                            ImageUrl = "/images/spinach.jpeg",
-                            Name = "Spinach ",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Blackberry ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 21,
-                            CategoryId = 2,
+                            CategoryId = 1,
                             Discount = 0f,
-                            ImageUrl = "/images/radish.jpg",
-                            Name = "Radish ",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Raspberry ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 22,
-                            CategoryId = 2,
+                            CategoryId = 1,
                             Discount = 0f,
-                            ImageUrl = "/images/celery.jpg",
-                            Name = "Celery ",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Blueberry ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 23,
-                            CategoryId = 2,
+                            CategoryId = 1,
                             Discount = 0f,
-                            ImageUrl = "/images/beans.jpg",
-                            Name = "Beans ",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Grape ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 24,
-                            CategoryId = 2,
+                            CategoryId = 1,
                             Discount = 0f,
-                            ImageUrl = "/images/carrot.jpg",
-                            Name = "Carrot",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Plum ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 25,
-                            CategoryId = 2,
+                            CategoryId = 1,
                             Discount = 0f,
-                            ImageUrl = "/images/eggplant.jpg",
-                            Name = "Eggplant ",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Watermelon ",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 26,
                             CategoryId = 3,
                             Discount = 0f,
-                            ImageUrl = "/images/cheese.jpg",
+                            ImageUrl = "",
                             Name = "Cheese ",
-                            Price = 0m,
-                            ProductDescription = ""
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 27,
                             CategoryId = 3,
                             Discount = 0f,
-                            ImageUrl = "/images/yogurt.jpg",
+                            ImageUrl = "",
                             Name = "Yogurt ",
-                            Price = 0m,
-                            ProductDescription = ""
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 28,
                             CategoryId = 3,
                             Discount = 0f,
-                            ImageUrl = "/images/milk.jpg",
+                            ImageUrl = "",
                             Name = "Milk ",
-                            Price = 0m,
-                            ProductDescription = ""
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 29,
-                            CategoryId = 3,
+                            CategoryId = 1,
                             Discount = 0f,
-                            ImageUrl = "/images/eggs.jpg",
-                            Name = "Eggs",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Cherry",
+                            Price = 0m
                         },
                         new
                         {
                             ProductId = 30,
-                            CategoryId = 4,
+                            CategoryId = 2,
                             Discount = 0f,
-                            ImageUrl = "/images/tuna.jpg",
-                            Name = "Tuna",
-                            Price = 0m,
-                            ProductDescription = ""
+                            ImageUrl = "",
+                            Name = "Eggplant ",
+                            Price = 0m
                         });
                 });
 

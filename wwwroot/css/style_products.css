@@ -13,10 +13,11 @@
 
 #fullpage {
     background-image: url('../images/products.png');
-    background-size: cover;
+    background-size:cover;
 }
 
 .prod {
+    text-decoration: none;
     width: 300px;
     max-width: 300px;
     margin: 0 4px;
@@ -59,10 +60,19 @@ h4 {
     text-align: center;
 }
 
+a {
+    color: dimgrey;
+    font-family:sans-serif;
+}
+
+    a:hover {
+        color:palegoldenrod;
+    }
 
 h3 {
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
+    color: dimgrey;
 }
 
 
@@ -76,7 +86,10 @@ h3 {
     column-count: 3;
 }
 
-
+img, svg {
+    vertical-align: middle;
+    cursor: pointer;
+}
 
 
 h2 {
@@ -85,12 +98,17 @@ h2 {
     font-size: 45px;
 }
 
+.justify-content-around {
+    justify-content: space-around !important;
+    font-family: 'Font Awesome 5 Free';
+    font-style: italic;
+}
+
 
 .button {
     box-shadow: #70aaec;
     font-family: cursive;
     align-content: space-between;
-    background-color: rgb(210, 215, 219);
     display: block;
     margin: 12px auto;
     padding: 8px 0px;
@@ -104,6 +122,26 @@ h2 {
     cursor: pointer;
 }
 
+#back2Top {
+    width: 45px;
+    line-height: 40px;
+    overflow: visible;
+    z-index: 999;
+    cursor: pointer;
+    margin-right: 25px;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    color: #555;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+    #back2Top:hover {
+        background-color: #DDF;
+        color: #000;
+    }
 
 /* FOOTER*/
 
@@ -122,7 +160,24 @@ footer {
 }
 
 .thumbnail {
-    background-image: url('../images/products.png');
-    height: 300px;
+    background-image: url('../images/details3.png');
+    height: 450px;
     background-size: cover;
+   
+}
+
+.align-content-center 
+{
+    text-align:center;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.thumbnail.section-box
+{
+    text-align: center;
+    padding-top: 30px;
 }
