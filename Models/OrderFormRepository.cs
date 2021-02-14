@@ -19,21 +19,23 @@ namespace OPG.Models
         public void CreateOrderForm ( OrderForm orderForm )
         {
             orderForm.OrderPlaced = DateTime.Now;
-            _appDbContext.OrderForms.Add ( orderForm );
 
             var orderItems = _order.OrderItems;
+            orderForm.OrderTotal = _order.GetOrderTotal ();
 
+            orderForm.OrderFormDetails = new List<OrderFormDetail> ();
+          
             foreach (var orderItem in orderItems )
             {
                 var orderFormDetail = new OrderFormDetail ()
                 {
                     Amount = orderItem.Amount,
                     ProductId = orderItem.Product.ProductId,
-                    OrderFormId = orderForm.OrderFormId,
                     Price = orderItem.Product.Price
                 };
-                _appDbContext.OrderFormDetails.Add(orderFormDetail);
+                orderForm.OrderFormDetails.Add ( orderFormDetail );
             }
+            _appDbContext.OrderForms.Add ( orderForm );
         _appDbContext.SaveChanges();
         }
     }

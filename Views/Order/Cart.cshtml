@@ -24,14 +24,13 @@
                     </tr>
                 </thead>
 
-
                 <tbody>
-                    @foreach (var line in Model.Order.OrderItems)
+                    @foreach ( var line in Model.Order.OrderItems )
                     {
                         <tr>
                             <td class="text-center">@line.Amount</td>
                             <td class="text-left">@line.Product.Name</td>
-                            <td class="text-right">@line.Product.Price.ToString("c")</td>
+                            <td class="text-right">@line.Product.Price.ToString( "c" )</td>
                             <td class="text-right">
                                 @((line.Amount * line.Product.Price).ToString("c"))
                             </td>
@@ -44,7 +43,7 @@
                     <tr>
                         <td colspan="3" class="text-left">Total:</td>
                         <td class="text-left">
-                            @Model.OrderTotal.ToString("c")
+                            @Model.OrderTotal.ToString( "c" )
                         </td>
 
                     </tr>
@@ -80,7 +79,7 @@
         <div class="btn-block">
             <button type="button" class="btn btn-link" asp-controller="Product" asp-action="Shop" onclick="redirectingProducts()">Back to shopping</button>
             @*<button type="button" class="btn btn-outline-success" asp-controller="OrderForm" asp-action="Checkout" onclick="redirectingOrderForm()">Checkout</button>*@
-            <a  type="button" class="btn btn-outline-success" asp-controller="OrderForm" asp-action="Checkout">Chekcout</a>
+            <a type="button" class="btn btn-outline-success" asp-controller="OrderForm" asp-action="Checkout">Checkout</a>
         </div>
 
 

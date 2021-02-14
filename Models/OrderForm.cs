@@ -26,7 +26,7 @@ namespace OPG.Models
         [Display ( Name = "Address  1" )]
         public string Address1 { get; set; }
 
-        [Display ( Name = "Address Line 2" )]
+        [Display ( Name = "Address 2" )]
         public string Address2 { get; set; }
 
         [Required ( ErrorMessage = "Please enter your zip code" )]
