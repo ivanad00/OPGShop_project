@@ -1,67 +1,60 @@
 ﻿@model OrderViewModel
-    <head>
-        <link href="~/css/style_cart.css" rel="stylesheet" />
-    </head>
+<head>
+    <link href="~/css/style_cart.css" rel="stylesheet" />
+</head>
 
-    <body>
-        <div class="fullpage">
-            <div id="text-box">
-                <h2>Your shopping cart</h2>
-                <h4>Here are the products in your shopping cart. <i class="fas fa-shopping-bag"></i></h4>
-            </div>
+<body>
+    <div class="fullpage">
+        <div id="text-box">
+            <h2>Your shopping cart</h2>
+            <h4>Here are the products in your shopping cart. <i class="fas fa-shopping-bag"></i></h4>
+        </div>
 
 
-            <div class="section-box">
-                <table class="table table-bordered table-striped">
-                    <thead>
+        <div class="section-box">
+            <table class="table table-bordered table-striped">
+                <thead>
 
+                    <tr>
+                        <th>Selected amount</th>
+                        <th>Product</th>
+                        <th class="text-right">Price</th>
+                        <th class="text-right">Subtotal</th>
+
+                    </tr>
+                </thead>
+
+
+                <tbody>
+                    @foreach (var line in Model.Order.OrderItems)
+                    {
                         <tr>
-                            <th>Selected amount</th>
-                            <th>Product</th>
-                            <th class="text-right">Price</th>
-                            <th class="text-right">Subtotal</th>
-
-                        </tr>
-                    </thead>
-
-
-                    <tbody>
-                        @foreach (var line in Model.Order.OrderProducts)
-                        {
-                            <tr>
-                                <td class="text-center">@line.Amount</td>
-                                <td class="text-left">@line.Product.Name</td>
-                                <td class="text-right">@line.Product.Price.ToString("c")</td>
-                                <td class="text-right">
-                                    @((line.Amount * line.Product.Price).ToString("c"))
-                                </td>
-                            </tr>
-                        }
-
-                    </tbody>
-
-                    <tfoot>
-                        <tr>
-                            <td colspan="3" class="text-left">Total:</td>
-                            <td class="text-left">
-                                @Model.OrderTotal.ToString("c")
+                            <td class="text-center">@line.Amount</td>
+                            <td class="text-left">@line.Product.Name</td>
+                            <td class="text-right">@line.Product.Price.ToString("c")</td>
+                            <td class="text-right">
+                                @((line.Amount * line.Product.Price).ToString("c"))
                             </td>
-
                         </tr>
-                    </tfoot>
-                </table>
-            </div>
+                    }
 
-            <div class="btn-block">
-                <button type="button" class="btn btn-link" asp-controller="Product" asp-action="Shop" onclick="redirectingProducts()">Back to shopping</button>
-                <button type="button" class="btn btn-outline-success" onclick="showPayment()">Checkout</button>
-            </div>
-      
+                </tbody>
 
-            <div id="checkout" style="display:none">
-                <p>Pay with:</p>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-left">Total:</td>
+                        <td class="text-left">
+                            @Model.OrderTotal.ToString("c")
+                        </td>
 
-        <label class="container">
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div id="checkout" style="display:none">
+            <p>Pay with:</p>
+
+            <label class="container">
 
                 <input type="radio" checked="checked" name="radio"> Pay Cash
                 <span class="checkmark"></span>
@@ -71,16 +64,30 @@
                 <input type="radio" name="radio"> Pay Card
                 <span class="checkmark"></span>
             </label>
-                <label class="container">
+            <label class="container">
 
-                    <input type="radio" name="radio">  Pay Pal
-                    <span class="checkmark"></span>
-         </label>
+                <input type="radio" name="radio">  Pay Pal
+                <span class="checkmark"></span>
+            </label>
 
-          <button type="button" class="btn btn-outline-success" asp-controller="Product" asp-action="PaymentSuccessfull" onclick="redirectingPaymentSuccessfull()">Confirm and pay</button>
+            <p class="button">
+                <button type="button" class="btn btn-outline-success" asp-controller="Product" asp-action="EndOrder" onclick="redirectingPaymentSuccessfull()">Confirm and pay</button>
+            </p>
 
-
-            </div>
         </div>
-        <script src="~/js/app.js"></script>
-    </body>
+
+
+        <div class="btn-block">
+            <button type="button" class="btn btn-link" asp-controller="Product" asp-action="Shop" onclick="redirectingProducts()">Back to shopping</button>
+            @*<button type="button" class="btn btn-outline-success" asp-controller="OrderForm" asp-action="Checkout" onclick="redirectingOrderForm()">Checkout</button>*@
+            <a  type="button" class="btn btn-outline-success" asp-controller="OrderForm" asp-action="Checkout">Checkout</a>
+        </div>
+
+
+
+
+        @*<button type="button" class="btn btn-outline-success" asp-controller="Product" asp-action="EndOrder" onclick="redirectingPaymentSuccessfull()">Confirm and pay</button>*@
+
+    </div>
+    <script src="~/js/app.js"></script>
+</body>

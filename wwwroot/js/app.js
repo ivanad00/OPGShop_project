@@ -39,3 +39,17 @@ function showPayment() {
         x.style.display = "none";
     }
 }
+
+
+var back2Top = document.getElementById("back2Top");
+back2Top.style.display = "none";  // hidden by default
+document.querySelector('body').onscroll = function () {
+    if (window.scrollY > 150) // showing 150px from top
+        back2Top.style.display = "block";
+    else
+        back2Top.style.display = "none";
+};
+
+
+
+

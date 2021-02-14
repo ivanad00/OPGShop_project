@@ -6,10 +6,7 @@ namespace OPG.Models
     public interface IProductRepository
     {
         IEnumerable<Product> AllProducts { get; }
-        Product GetProductByID(int product_id);
+        Product GetProductByID(int productId);
 
-        void AddProduct ();
-        void AddPrice ();
-        void AddCategory ();
     }
 }

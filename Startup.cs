@@ -28,7 +28,8 @@ namespace OPG
            
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
-            services.AddScoped<Order> ( o => Order.GetOrder ( o ) );
+            services.AddScoped<IOrderFormRepository, OrderFormRepository> ();
+            services.AddScoped<Order> ( sp => Order.GetOrder( sp ) );
             services.AddControllersWithViews();
             services.AddMvc();
             services.AddHttpContextAccessor ();
@@ -73,6 +74,11 @@ namespace OPG
                     name: "ShoppingCart",
                     pattern: "{controller}/{action}/{id?}",
                     new { controller = "Order", action = "Cart" }
+                    );
+                endpoints.MapControllerRoute (
+                    name: "Contact",
+                    pattern: "{controller}/{action}/{id?}",
+                    new { controller = "Contact", action = "Index" }
                     );
             } );
         }

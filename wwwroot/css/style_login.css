@@ -8,8 +8,9 @@
     padding: 26px !important;
     height: 100%;
     width: 100%;
-    background-image: url("../images/lock111.jpg");
-
+    background-image: url('../images/login.png');
+    background-size: cover;
+}
 
 
 
@@ -51,7 +52,7 @@
     position: absolute;
     width: 112px;
     height: 100%;
-    background: linear-gradient(to right, rgb(165, 165, 201), rgb(70, 82, 121));
+    background: linear-gradient(to right, rgb(165, 165, 201), rgb(79 81 159));
     border-radius: 30px;
     transition: .5s;
 }
@@ -85,7 +86,7 @@
     cursor: pointer;
     display: block;
     margin-left: -1px;
-    background: linear-gradient(to right, rgb(165, 165, 201), beige);
+    background: linear-gradient(to right, rgb(47 47 140), #89bff530);
     border: 0;
     outline: none;
     border-radius: 30px !important;

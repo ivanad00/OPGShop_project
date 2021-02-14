@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>OPG Shop</title>
-    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
     <link href="~/css/style_home.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,27 +26,24 @@
 
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" asp-controller="Home" asp-action="index">HOME</a>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Product" asp-action="Shop" onclick="redirectingProducts()">Products</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="Product" asp-action="Shop" onclick="redirectingProducts()">PRODUCTS</a>
+                                <a class="nav-link" asp-controller="Form" asp-action="Login" onclick="redirectingForms()">Login/Register</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="Form" asp-action="Login" onclick="redirectingForms()">LOGIN / REGISTER</a>
+                                <a class="nav-link" asp-controller="Contact" asp-action="index">Contact</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" asp-controller="Order" asp-action="Cart"><i class="fas fa-shopping-cart"></i> </a>
                             </li>
+                                                      
                         </ul>
                     </div>
                 </div>
             </nav>
         </section>
- 
-
-        <!--slider-->
-
         <div>
             @RenderBody()
         </div>
@@ -54,7 +51,7 @@
             <div class="container text-center">
                 <p id="copyright">
                     OPG Shop,
-                    <em>All Rights Reserved. &copy; 2020.</em>
+                    <em>All Rights Reserved. &copy; 2021.</em>
                 </p>
             </div>
         </footer>

@@ -1,35 +1,31 @@
-﻿* 
-{
-    box-sizing:border-box;
+﻿* {
+    box-sizing: border-box;
 }
 
-.fullpage 
-{
-   background-image:url(../images/cart.jpg); 
-    background-size:contain;
-    width:100%;
+.fullpage {
+    background-image: url('../images/cart.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 620px;
 }
 
-.table 
-{
+.table {
     width: 150%;
     height: auto;
 }
 
 
-.table-striped 
-{
-    margin: 80px auto;
-    border-collapse:collapse;
+.table-striped {
+    margin: auto;
+    border-collapse: collapse;
     width: 80%;
-    position:center;
+    position: center;
 }
 
 
-.cart-info 
-{
-    display:flex;
-    flex-wrap:wrap;
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -39,71 +35,85 @@ thead {
 }
 
 
-tbody, td, tfoot, th, thead, tr 
-{
+tbody, td, tfoot, th, thead, tr {
     border-color: darkgrey;
 }
 
 
 h2, h4 {
     margin-left: 50px;
-    margin-top: 10px;
     font-weight: lighter;
     font-family: system-ui;
     text-align: center;
     background: #fcfcfc;
 }
 
+h2 {
+    padding-top: 10px
+}
+
+h4 {
+    padding-bottom: 25px;
+}
+
 #text-box {
-    background:snow;
+    background: snow;
 }
 
 .button {
     height: 20px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .btn-block {
-    width: 100%;
-    text-align:right;
-    margin-left:-20%;
+    width: 75%;
+    text-align: right;
+    margin-left: -20%;
     padding-bottom: 20px;
     margin-bottom: 30px;
-    padding-top:10px;
-    background: #fcfcfc;
-    height: 50px;
+    padding-top: 30px;
+    background: none;
+    height: 20px;
 }
 
-.section-box 
-{
+.section-box {
     overflow-x: auto;
     border-color: lightslategrey;
-    width: 830px;
-    height: 450px;
-    margin: 80px auto;
+    width: 750px;
+    height: 250px;
+    margin: 0;
     background: #FFFFFF;
     box-shadow: 4px 3px 3px 4px rgba(0,0,0,0.10);
-    border-radius: 26px;
     display: flex;
     flex-direction: column;
     background-image: none;
-    background-color: lightyellow;
+    background-color: #fcfcfc;
+    float: left;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 15px;
 }
 
 #checkout, .p {
-    background-color: aqua;
     border-color: lightslategrey;
-    width: 830px;
-    height: 150px;
-    margin: 80px auto;
+    width: 200px;
+    height: 170px;
     background: #FFFFFF;
     box-shadow: 4px 3px 3px 4px rgba(0,0,0,0.10);
-    border-radius: 26px;
     display: flex;
     flex-direction: column;
     background-image: none;
-    background-color: lightyellow;
+    background-color: #fcfcfc;
+    float: right;
+    margin-right: 250px;
+    margin-top: 15px;
 }
 
-.container{
-    float:inherit;
+
+.form-group {
+    text-align: center;
+    width: 100%;
+    text-align-last: center;
 }

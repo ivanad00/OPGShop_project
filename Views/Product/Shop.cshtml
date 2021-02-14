@@ -1,25 +1,27 @@
-﻿@model ShopViewModel; 
+﻿@model ShopViewModel;
 <head>
     <link rel="stylesheet" href="~/css/style_products.css">
 </head>
 
 
 
-    <body>
-      
-            <div class="grid-container">
-                @foreach (var p in Model.Product)
-                {
-                    @*<div class="grid-container">*@
-                    <div class="prod">
-                        <a asp-controller="Product" asp-action="Details" asp-route-id="@p.ProductId">@p.Name</a>
-                        @*<div>
+<body>
+    <section id="fullpage">
+        <div class="grid-container">
+            @foreach (var p in Model.Product)
+            {
+                @*<div class="grid-container">*@
+                <div class="prod">
+                    <a asp-controller="Product" asp-action="Details" asp-route-id="@p.ProductId">@p.Name</a>
+                    <img alt="@p.Name" src="@Url.Content(@p.ImageUrl)" />
+                    @*<div>
                             <a class="button" asp-controller="Order" asp-action="AddToOrder"
                                asp-route-pieId="@Model.ProductId">Add to cart</a>
                         </div>*@
-                    </div>
-
-                }
-            </div>
-     
-    </body>
+                </div>
+            }
+            <a id="back2Top" href="#"><i class="fas fa-arrow-circle-up"></i></a>
+        </div>
+    </section>
+    <script src="~/js/app.js"></script>
+</body>

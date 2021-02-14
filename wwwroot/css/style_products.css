@@ -3,46 +3,28 @@
     margin: 0;
     box-sizing: content-box;
 }
-.navbar-brand img {
-    height: 60px;
-    padding-left: 30px;
-}
 
 
-    .vegetables {
-    background-color: rgb(255, 255, 255);
-}
 
-
-.section-box {
+.section-box, .vegetables, .fruits, .other-products {
     background-color: #e4e0e0;
 }
 
 
-.vegetables {
-    background-color: #e4e0e0;
+#fullpage {
+    background-image: url('../images/product.png');
+    background-size:cover;
+
 }
-
-
-.fruit {
-    background-color: #e4e0e0;
-}
-
-
-.other-products {
-    background-color: #e4e0e0;
-}
-
-
 
 .prod {
- 
-    width: 300px ;
-    max-width: 300px ;
-    margin: 0 4px ;
-    border-radius: 4px ;
-    white-space: normal ;
-    transition: all 0.3s ease ;
+    text-decoration: none;
+    width: 300px;
+    max-width: 300px;
+    margin: 0 4px;
+    border-radius: 4px;
+    white-space: normal;
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -53,15 +35,14 @@
     padding-bottom: .5rem;
 }
 
-
 .prod:hover {
-        background-color: rgb(255, 255, 255) ;
-        -webkit-transform: translateY(-5px) ;
-        -ms-transform: translateY(-5px) ;
-        transform: translateY(-5px) ;
-        -webkit-box-shadow: 0px 14px 32px 0px rgba(94, 40, 40, 0.2) ;
-        box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.2) ;
-        border-color: #000000 ;
+        background-color: rgb(255, 255, 255);
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+        -webkit-box-shadow: 0px 14px 32px 0px rgba(94, 40, 40, 0.2);
+        box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.2);
+        border-color: #000000;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -74,16 +55,25 @@
 
 h4 {
     text-align: center;
-    font-family: cursive ;
-    text-shadow: 1px 0.2px ;
-    font-size: 20px ;
-    text-align: center ;
+    font-family: cursive;
+    text-shadow: 1px 0.2px;
+    font-size: 20px;
+    text-align: center;
 }
 
+a {
+    color: dimgrey;
+    font-family:sans-serif;
+}
+
+    a:hover {
+        color:palegoldenrod;
+    }
 
 h3 {
-    font-size: 25px ;
-    text-align: center ;
+    font-size: 22px;
+    text-align: center;
+    color: dimgrey;
 }
 
 
@@ -97,15 +87,9 @@ h3 {
     column-count: 3;
 }
 
-
-header h1 {
-    margin: 0;
-    padding: 0 12px;
-    font-size: 70px;
-    text-align: center;
-    color: #000000;
-    text-shadow: 5px 5px 10px rgb(222, 222, 223);
-    font-family: 'Brush Script MT', cursive;
+img, svg {
+    vertical-align: middle;
+    cursor: pointer;
 }
 
 
@@ -115,12 +99,17 @@ h2 {
     font-size: 45px;
 }
 
+.justify-content-around {
+    justify-content: space-around !important;
+    font-family: 'Font Awesome 5 Free';
+    font-style: italic;
+}
+
 
 .button {
     box-shadow: #70aaec;
     font-family: cursive;
     align-content: space-between;
-    background-color: rgb(210, 215, 219);
     display: block;
     margin: 12px auto;
     padding: 8px 0px;
@@ -134,6 +123,26 @@ h2 {
     cursor: pointer;
 }
 
+#back2Top {
+    width: 45px;
+    line-height: 40px;
+    overflow: visible;
+    z-index: 999;
+    cursor: pointer;
+    margin-right: 25px;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    color: #555;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+    #back2Top:hover {
+        background-color: #DDF;
+        color: #000;
+    }
 
 /* FOOTER*/
 
@@ -150,4 +159,29 @@ footer {
     padding: 5px 0;
     z-index: 1;
 }
+
+.thumbnail {
+    background-image: url('../images/details3.png');
+    height: 450px;
+    background-size: cover;
+   
+}
+
+.align-content-center 
+{
+    text-align:center;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.thumbnail.section-box
+{
+    text-align: center;
+    padding-top: 30px;
+}
+
+
 
