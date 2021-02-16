@@ -4,10 +4,14 @@
     ViewData["Title"] = "Register";
 }
 
-<h1>@ViewData["Title"]</h1>
+<head>
+    <link href="~/css/style_login_register.css" rel="stylesheet" />
+</head>
 
 <div class="row">
+    <h1>@ViewData["Title"]</h1>
     <div class="col-md-4">
+
         <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
             <h4>Create a new account.</h4>
             <hr />
@@ -28,6 +32,7 @@
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
             <button type="submit" class="btn btn-primary">Register</button>
+            <hr />
         </form>
     </div>
     <div class="col-md-6 col-md-offset-2">

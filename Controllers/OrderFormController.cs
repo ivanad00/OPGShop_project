@@ -40,7 +40,7 @@ namespace OPG.Controllers
         }
         public IActionResult CheckoutComplete ()
         {
-            ViewBag.CheckoutCompleteMessage = "Thanks for your order.";
+            ViewBag.CheckoutCompleteMessage = "Thanks for your order!";
             return View ();
         }
     }

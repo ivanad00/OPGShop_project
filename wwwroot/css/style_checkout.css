@@ -1,0 +1,18 @@
+﻿section.checkout {
+    background-image: url('/images/checkout1.png');
+    height: 535px;
+    max-height:550px;
+    background-size:cover;
+}
+
+h1
+{
+    font-family: 'Font Awesome 5 Free';
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    padding: 195px 0;
+}
+
