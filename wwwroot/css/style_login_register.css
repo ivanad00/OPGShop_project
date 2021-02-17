@@ -1,10 +1,9 @@
-﻿.col-md-6.col-md-offset-2 
-{
+﻿.col-md-6.col-md-offset-2 {
     display: none;
 }
 
 
-h1,h4 {
+h1, h4 {
     font-family: 'Font Awesome 5 Free';
 }
 
@@ -15,11 +14,11 @@ h1,h4 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-/*    margin-top: 20px;
-*/    background-image: url('/images/login.png');
-    background-size:cover;
-    height:520px;
-    width:100%;
+    /*    margin-top: 20px;
+*/ background-image: url('/images/login.png');
+    background-size: cover;
+    height: 520px;
+    width: 100%;
 }
 
 button.btn.btn-primary {
@@ -36,7 +35,7 @@ header {
     background-image: url('/images/login.png');
     background-size: cover;
     height: 520px;
-     text-align: center;
+    text-align: center;
     clear: both;
     display: flex;
     justify-content: center;
@@ -47,4 +46,37 @@ header {
 .form-control {
     background-color: floralwhite;
     border-radius: 21px;
+}
+
+.col-md-3 {
+    background-color: rgb(238 237 232 / 29%);
+}
+
+.alert-success {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    position: fixed;
+    background: linear-gradient( 45deg, lightgrey, lightblue);
+}
+
+a#enable-authenticator, a#reset-authenticator {
+    background-color: rgb(240 233 225);
+    width: max-content;
+    border-color: lightslategray;
+    margin-top: 10px;
+}
+
+::marker {
+    color: #eddfc2;
+}
+
+.verification-box {
+    margin-left:30%;
+    margin-top:35px;
+
+}
+
+a#enable-authenticator:hover, a#reset-authenticator:hover {
+    color: lightsteelblue;
 }

@@ -127,11 +127,32 @@ padding: 0 10px;
     padding-bottom: 40px;
 }
 
+.row.services {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+    box-sizing: border-box;
+}
 
-/* FOOTER*/ 
-
-footer 
+.col-md-3.text-center 
 {
+    
+}
+
+
+
+/* FOOTER*/
+footer {
     background-color: rgb(222, 233, 247);
 }
 
