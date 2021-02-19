@@ -71,9 +71,9 @@ a {
     }
 
 h3 {
-    font-size: 22px;
+    font-size: 30px;
     text-align: center;
-    color: dimgrey;
+    color: cornflowerblue;
 }
 
 
@@ -111,7 +111,7 @@ h2 {
     font-family: cursive;
     align-content: space-between;
     display: block;
-    margin: 12px auto;
+    margin: auto;
     padding: 8px 0px;
     font-size: 16px;
     border: 2px solid transparent;
@@ -126,7 +126,7 @@ h2 {
 }
 
 #back2Top {
-    width: 45px;
+    width: 40px;
     line-height: 40px;
     overflow: visible;
     z-index: 999;
@@ -181,4 +181,26 @@ a {
 .thumbnail.section-box {
     text-align: center;
     padding-top: 30px;
+    height:495px;
+}
+
+
+.image {
+    float: left;
+    margin-left: 103px;
+}
+
+.description {
+    vertical-align: middle;
+    text-align: inherit;
+    margin-top: 71px;
+    margin-left: 400px;
+    margin-right: 100px;
+}
+
+h4.center {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 124px;
+    margin-right: 356px;
 }

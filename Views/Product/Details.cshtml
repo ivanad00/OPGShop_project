@@ -7,11 +7,17 @@
 <div class="thumbnail section-box">
 
     <h3><a href="#">@Model.Name</a></h3>
+    <div class="image">
+        <img alt="@Model.Name" class="align-content-center" src="@Url.Content(@Model.ImageUrl)">
+    </div>
 
-    <img alt="@Model.Name" class="align-content-center" src="@Url.Content(@Model.ImageUrl)">
-    <h5 class="justify-content-around">@Model.ProductDescription</h5>
+    <div class="description">
+        <h5 class="justify-content-around">@Model.ProductDescription</h5>
+    </div>
+
+
     <div class="caption-full">
-        <h4 class="center">@Model.Price kn</h4>
+        <h4 class="center">Price: @Model.Price kn</h4>
 
         <div>
             <a class="button" asp-controller="Order" asp-action="AddToOrder"
