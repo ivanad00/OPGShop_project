@@ -1,12 +1,12 @@
-﻿section.checkout {
+﻿
+section.checkout {
     background-image: url('/images/checkout1.png');
     height: 535px;
-    max-height:550px;
-    background-size:cover;
+    max-height: 550px;
+    background-size: cover;
 }
 
-h1
-{
+h1 {
     font-family: 'Font Awesome 5 Free';
     margin: auto;
     width: 50%;
@@ -15,4 +15,58 @@ h1
     align-items: center;
     padding: 195px 0;
 }
+
+
+/***************/
+
+.fa-star:before {
+    content: "\f005";
+}
+
+
+.star .fas {
+    color: #F2D51A;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 16px;
+    flex-direction: row;
+}
+
+
+.fa, .fas {
+    font-weight: 900;
+}
+
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+i.far.fa-star.heart-icon:hover {
+    color: darkorange;
+}
+
+i.far.fa-star.heart-icon::after {
+    color: #F2D51A;
+}
+
+section.review {
+    text-align: center;
+    width:300px;
+    margin: -160px 40%;
+}
+
+
 

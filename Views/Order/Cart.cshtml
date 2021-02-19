@@ -19,18 +19,18 @@
                         <th>Selected amount</th>
                         <th>Product</th>
                         <th class="text-right">Price</th>
-                        <th class="text-right">Subtotal</th>
+                        <th class="text-right">Subtotal</th>h
 
                     </tr>
                 </thead>
 
                 <tbody>
-                    @foreach ( var line in Model.Order.OrderItems )
+                    @foreach (var line in Model.Order.OrderItems)
                     {
                         <tr>
                             <td class="text-center">@line.Amount</td>
                             <td class="text-left">@line.Product.Name</td>
-                            <td class="text-right">@line.Product.Price.ToString( "c" )</td>
+                            <td class="text-right">@line.Product.Price.ToString("c")</td>
                             <td class="text-right">
                                 @((line.Amount * line.Product.Price).ToString("c"))
                             </td>
@@ -43,14 +43,14 @@
                     <tr>
                         <td colspan="3" class="text-left">Total:</td>
                         <td class="text-left">
-                            @Model.OrderTotal.ToString( "c" )
+                            @Model.OrderTotal.ToString("c")
                         </td>
 
                     </tr>
                 </tfoot>
             </table>
         </div>
-        <div id="checkout" style="display:none">
+        @*<div id="checkout" style="display:none">
             <p>Pay with:</p>
 
             <label class="container">
@@ -73,7 +73,7 @@
                 <button type="button" class="btn btn-outline-success" asp-controller="Product" asp-action="EndOrder" onclick="redirectingPaymentSuccessfull()">Confirm and pay</button>
             </p>
 
-        </div>
+        </div>*@
 
 
         <div class="btn-block">

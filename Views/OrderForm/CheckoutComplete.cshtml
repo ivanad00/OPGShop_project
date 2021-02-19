@@ -1,9 +1,76 @@
 ﻿<head>
     <link href="~/css/style_checkout.css" rel="stylesheet" />
-</head>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">*@
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+ </head>
+
+<style>
+    .checked {color: orange; }
+</style>
 
 
 <body>
-    <section class="checkout"><h1>@ViewBag.CheckoutCompleteMessage</h1></section>
+    <section class="checkout">
+        <h1>@ViewBag.CheckoutCompleteMessage</h1>
 
-</body>
+
+
+        @*<form class="container">
+            <div class="star">
+                <i class="far fa-star heart-icon"></i>
+                <i class="far fa-star heart-icon"></i>
+                <i class="far fa-star heart-icon"></i>
+                <i class="far fa-star heart-icon"></i>
+                <i class="far fa-star heart-icon"></i>
+            </div>
+        </form>*@
+
+        <!--<div class="container">
+    <div class="post">
+        <div class="text">
+            Leave your feedback:
+        </div>-->
+        
+        <!--</div>
+                <div class="star-widget">
+                    <input type="radio" name="rate" id="rate-5">
+                    <label for="rate-5" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4">
+                    <label for="rate-4" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3">
+                    <label for="rate-3" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2">
+                    <label for="rate-2" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-1">
+                    <label for="rate-1" class="fas fa-star"></label>
+                    <form action="#">
+                        <div class="textarea">
+                            <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                        </div>
+                    </form>
+                    <br />
+                    <div class="btn">
+                        <button type="submit">Save</button>
+                    </div>
+                </div>
+            </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>-->
+        <section class="review">
+            <p>Leave your feedback</p>
+            <span onmouseover="starmark(this)" onclick="starmark(this)" id="1one" style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+            <span onmouseover="starmark(this)" onclick="starmark(this)" id="2one" style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+            <span onmouseover="starmark(this)" onclick="starmark(this)" id="3one" style="font-size:40px;cursor:pointer;" class="fa fa-star "></span>
+            <span onmouseover="starmark(this)" onclick="starmark(this)" id="4one" style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+            <span onmouseover="starmark(this)" onclick="starmark(this)" id="5one" style="font-size:40px;cursor:pointer;" class="fa fa-star"></span>
+            <br />
+            <textarea style="margin-top:5px;" class="form-control" rows="3" id="comment" placeholder="Enter your review"></textarea>
+
+            <button onclick="result()" type="button" style="margin-top:10px;margin-left:5px;" class="btn btn-lg btn-success">Save</button>
+        </section>
+    </section>
+    </body>
+ <script src="~/js/app.js"></script>
+

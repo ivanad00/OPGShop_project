@@ -1,4 +1,4 @@
-﻿* {
+﻿﻿* {
     box-sizing: border-box;
 }
 
@@ -118,3 +118,6 @@ h4 {
     text-align-last: center;
 }
 
+#text {
+    display:none;
+}

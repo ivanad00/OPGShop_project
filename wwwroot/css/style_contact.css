@@ -1,15 +1,14 @@
-﻿.contact 
-{
-    height:520px;
+﻿.contact {
+    height: 520px;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 50px;
     font-family: 'Font Awesome 5 Free';
     background-image: url('/images/contact.png');
-    background-size:cover;
-    font-size:25px;
-    color:darkslategrey;
-
+    background-size: cover;
+    font-size: 25px;
+    margin-top: 20px;
+    color: #4a4136
 }
 
 
