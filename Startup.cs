@@ -46,7 +46,6 @@ namespace OPG
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseNodeModules ();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

@@ -7586,23 +7586,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ivana Đipalo\\.nuget\\packages\\": {},
+    "C:\\Users\\ivana\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ivana Đipalo\\Documents\\GitHub\\OPG_dotnet\\OPG.csproj",
+      "projectUniqueName": "C:\\Users\\ivana\\OneDrive\\Documents\\GitHub\\OPG.csproj",
       "projectName": "OPG",
-      "projectPath": "C:\\Users\\Ivana Đipalo\\Documents\\GitHub\\OPG_dotnet\\OPG.csproj",
-      "packagesPath": "C:\\Users\\Ivana Đipalo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ivana Đipalo\\Documents\\GitHub\\OPG_dotnet\\obj\\",
+      "projectPath": "C:\\Users\\ivana\\OneDrive\\Documents\\GitHub\\OPG.csproj",
+      "packagesPath": "C:\\Users\\ivana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ivana\\OneDrive\\Documents\\GitHub\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ivana Đipalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ivana\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

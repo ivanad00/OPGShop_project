@@ -10,6 +10,8 @@ namespace OPG.Models
         [BindNever]
         public int OrderFormId { get; set; }
         public List<OrderFormDetail> OrderFormDetails { get; set; }
+        public StoreUser User { get; set; }
+        public int UserId { get; set; }
 
         [Required ( ErrorMessage = "Please enter your first name" )]
         [Display ( Name = "First name" )]

@@ -545,3 +545,35 @@ C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\ref\OPG.dll
 C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\OPG.pdb
 C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\OPG.genruntimeconfig.cache
 C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\obj\Debug\net5.0\OPG.csprojAssemblyReference.cache
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\AccessDenied.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ConfirmEmailChange.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ExternalLogin.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ForgotPassword.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Lockout.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\LoginWith2fa.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Email.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\ShowRecoveryCodes.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_Layout.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResendEmailConfirmation.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml.g.cs
+C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_StatusMessage.cshtml.g.cs
