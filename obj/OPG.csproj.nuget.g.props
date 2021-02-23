@@ -5,7 +5,7 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\ivana\.nuget\packages\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Ivana Đipalo\.nuget\packages\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.8.0</NuGetToolVersion>
   </PropertyGroup>
@@ -25,13 +25,22 @@
     </Content>
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)nunittestadapter\2.3.0\build\NUnitTestAdapter.props" Condition="Exists('$(NuGetPackageRoot)nunittestadapter\2.3.0\build\NUnitTestAdapter.props')" />
+    <Import Project="$(NuGetPackageRoot)nunit3testadapter\3.17.0\build\netcoreapp2.1\NUnit3TestAdapter.props" Condition="Exists('$(NuGetPackageRoot)nunit3testadapter\3.17.0\build\netcoreapp2.1\NUnit3TestAdapter.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.web.librarymanager.build\2.1.113\build\Microsoft.Web.LibraryManager.Build.props" Condition="Exists('$(NuGetPackageRoot)microsoft.web.librarymanager.build\2.1.113\build\Microsoft.Web.LibraryManager.Build.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\5.0.3\build\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\5.0.3\build\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.identity.ui\5.0.2\buildTransitive\Microsoft.AspNetCore.Identity.UI.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.identity.ui\5.0.2\buildTransitive\Microsoft.AspNetCore.Identity.UI.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_Web_LibraryManager_Build Condition=" '$(PkgMicrosoft_Web_LibraryManager_Build)' == '' ">C:\Users\ivana\.nuget\packages\microsoft.web.librarymanager.build\2.1.113</PkgMicrosoft_Web_LibraryManager_Build>
-    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\ivana\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0</PkgMicrosoft_CodeAnalysis_Analyzers>
-    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\ivana\.nuget\packages\microsoft.entityframeworkcore.tools\5.0.2</PkgMicrosoft_EntityFrameworkCore_Tools>
+    <PkgNUnitTestAdapter_WithFramework Condition=" '$(PkgNUnitTestAdapter_WithFramework)' == '' ">C:\Users\Ivana Đipalo\.nuget\packages\nunittestadapter.withframework\2.0.0</PkgNUnitTestAdapter_WithFramework>
+    <PkgNUnit_Extension_VSProjectLoader Condition=" '$(PkgNUnit_Extension_VSProjectLoader)' == '' ">C:\Users\Ivana Đipalo\.nuget\packages\nunit.extension.vsprojectloader\3.8.0</PkgNUnit_Extension_VSProjectLoader>
+    <PkgNUnit_Extension_TeamCityEventListener Condition=" '$(PkgNUnit_Extension_TeamCityEventListener)' == '' ">C:\Users\Ivana Đipalo\.nuget\packages\nunit.extension.teamcityeventlistener\1.0.7</PkgNUnit_Extension_TeamCityEventListener>
+    <PkgNUnit_Extension_NUnitV2ResultWriter Condition=" '$(PkgNUnit_Extension_NUnitV2ResultWriter)' == '' ">C:\Users\Ivana Đipalo\.nuget\packages\nunit.extension.nunitv2resultwriter\3.6.0</PkgNUnit_Extension_NUnitV2ResultWriter>
+    <PkgNUnit_Extension_NUnitV2Driver Condition=" '$(PkgNUnit_Extension_NUnitV2Driver)' == '' ">C:\Users\Ivana Đipalo\.nuget\packages\nunit.extension.nunitv2driver\3.8.0</PkgNUnit_Extension_NUnitV2Driver>
+    <PkgNUnit_Extension_NUnitProjectLoader Condition=" '$(PkgNUnit_Extension_NUnitProjectLoader)' == '' ">C:\Users\Ivana Đipalo\.nuget\packages\nunit.extension.nunitprojectloader\3.6.0</PkgNUnit_Extension_NUnitProjectLoader>
+    <PkgNUnit_ConsoleRunner Condition=" '$(PkgNUnit_ConsoleRunner)' == '' ">C:\Users\Ivana Đipalo\.nuget\packages\nunit.consolerunner\3.12.0</PkgNUnit_ConsoleRunner>
+    <PkgMicrosoft_Web_LibraryManager_Build Condition=" '$(PkgMicrosoft_Web_LibraryManager_Build)' == '' ">C:\Users\Ivana Đipalo\.nuget\packages\microsoft.web.librarymanager.build\2.1.113</PkgMicrosoft_Web_LibraryManager_Build>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\Ivana Đipalo\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\Ivana Đipalo\.nuget\packages\microsoft.entityframeworkcore.tools\5.0.2</PkgMicrosoft_EntityFrameworkCore_Tools>
   </PropertyGroup>
 </Project>

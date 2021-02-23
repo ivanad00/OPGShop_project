@@ -577,3 +577,23 @@ C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\P
 C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
 C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml.g.cs
 C:\Users\ivana\OneDrive\Documents\GitHub\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_StatusMessage.cshtml.g.cs
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\NUnit.VisualStudio.TestAdapter.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\Mono.Cecil.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\Mono.Cecil.Mdb.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\Mono.Cecil.Pdb.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\Mono.Cecil.Rocks.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\nunit.core.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\nunit.core.interfaces.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\nunit.util.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\NUnit3.TestAdapter.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\NUnit3.TestAdapter.pdb
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\nunit.engine.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\nunit.engine.api.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\nunit.engine.core.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\Microsoft.DotNet.InternalAbstractions.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\nunit.framework.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\System.Xml.XPath.XmlDocument.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\Autofac.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\Autofac.Extras.Moq.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\Castle.Core.dll
+C:\Users\Ivana Đipalo\Documents\GitHub\OPG_dotnet\bin\Debug\net5.0\Moq.dll

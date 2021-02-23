@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivana\\OneDrive\\Documents\\GitHub\\OPG.csproj": {}
+    "C:\\Users\\Ivana Đipalo\\Documents\\GitHub\\OPG_dotnet\\OPG.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivana\\OneDrive\\Documents\\GitHub\\OPG.csproj": {
+    "C:\\Users\\Ivana Đipalo\\Documents\\GitHub\\OPG_dotnet\\OPG.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivana\\OneDrive\\Documents\\GitHub\\OPG.csproj",
+        "projectUniqueName": "C:\\Users\\Ivana Đipalo\\Documents\\GitHub\\OPG_dotnet\\OPG.csproj",
         "projectName": "OPG",
-        "projectPath": "C:\\Users\\ivana\\OneDrive\\Documents\\GitHub\\OPG.csproj",
-        "packagesPath": "C:\\Users\\ivana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivana\\OneDrive\\Documents\\GitHub\\obj\\",
+        "projectPath": "C:\\Users\\Ivana Đipalo\\Documents\\GitHub\\OPG_dotnet\\OPG.csproj",
+        "packagesPath": "C:\\Users\\Ivana Đipalo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ivana Đipalo\\Documents\\GitHub\\OPG_dotnet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ivana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ivana Đipalo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +43,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Autofac.Extras.Moq": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.2, )"
@@ -78,6 +82,22 @@
             "Microsoft.Web.LibraryManager.Build": {
               "target": "Package",
               "version": "[2.1.113, )"
+            },
+            "NUnit.Console": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "NUnitTestAdapter": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "NUnitTestAdapter.WithFramework": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             },
             "OdeToCode.UseNodeModules": {
               "target": "Package",
